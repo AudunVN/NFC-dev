@@ -97,6 +97,18 @@ textarea {
 	color: #75C5F0;
 }
 
+.icon-link.nfcweb .fa-paw {
+    background-image: url("/img/NFCicon.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 50% 50%;
+    color: transparent;
+}
+
+.icon-link.nfcweb .fa-square {
+	color: #e7f5fe;
+}
+
 .footer {
 	width: 100%;
 	margin-top: 1em;

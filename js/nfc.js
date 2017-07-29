@@ -68,7 +68,9 @@ $(document).ready(function() {
 		});
 	});
 	
-	$(".cost-container").affix({offset: {top: $("#regform_wrap .form").position().top-$(".navbar").height(), bottom: $(document).outerHeight()-($("#regform_wrap").position().top+$("#regform_wrap").outerHeight())}});
+	if (document.querySelector(".cost-container")) {
+		$(".cost-container").affix({offset: {top: $("#regform_wrap .form").position().top-$(".navbar").height(), bottom: $(document).outerHeight()-($("#regform_wrap").position().top+$("#regform_wrap").outerHeight())}});
+	}
 	
 	resizeHandler();
 	
