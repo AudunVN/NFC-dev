@@ -182,6 +182,74 @@ label,
   }
 }
 
+.checkbox.styled input {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+}
+
+  .checkbox.styled label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  // Box.
+  .checkbox.styled .checkbox-value {
+    content: '';
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 18px;
+    height: 18px;
+    background: white;
+  }
+
+  // Box hover
+  .checkbox.styled input:hover + .checkbox-value {
+    background: @brand-info;
+  }
+  
+  // Box focus
+  .checkbox.styled input:focus + .checkbox-value {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  .checkbox.styled input:checked + .checkbox-value {
+    background: @brand-info;
+  }
+  
+  // Disabled state label.
+  .checkbox.styled input:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  .checkbox.styled input:disabled + .checkbox-value {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  .checkbox.styled input:checked + .checkbox-value:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+      2px 0 0 white,
+      4px 0 0 white,
+      4px -2px 0 white,
+      4px -4px 0 white,
+      4px -6px 0 white,
+      4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+
 // Navs =======================================================================
 
 .nav {

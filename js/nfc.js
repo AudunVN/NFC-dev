@@ -26,6 +26,11 @@ $(document).ready(function() {
 		$('.navbar-toggle').click();
 	});
 	
+	$(".checkbox").each(function(){
+		$(this).addClass("styled");
+		$(this).find("input[type=checkbox]").after("<div class='checkbox-value'></div>");
+	});
+	
 	$(document).click(function(event) { 
 		if(!$(event.target).closest('#navbar').length) {
 			if($('#navbar').is(".in")) {
@@ -51,17 +56,29 @@ $(document).ready(function() {
 			overlay: "js/vegas/overlays/01.png"
 		});
 	});
+	
+	if ($("#regform_wrap").width() < 600) {
+		$("#regform_wrap").addClass("wrapped");
+		$("#regform_wrap .cost-container").addClass("closed");
+	} else {
+		$("#regform_wrap").removeClass("wrapped");
+		$("#regform_wrap .cost-container").removeClass("closed");
+	}
+	
 	$(".cost-container").css("width", $(".sidebar-container").width()+"px");
-	$(".cost-container").affix({offset: {top: $("#regform_wrap").position().top, bottom: $(document).outerHeight()-($("#regform_wrap").position().top+$("#regform_wrap").outerHeight())}});
+	$(".cost-container").affix({offset: {top: $("#regform_wrap .form").position().top-$(".navbar").height(), bottom: $(document).outerHeight()-($("#regform_wrap").position().top+$("#regform_wrap").outerHeight())}});
 });
 
 $(window).resize(function() {
-  $(".cost-container.affix").css("width", $(".sidebar-container").width()+"px");
- if ($("#regform_wrap").width() < 600) {
-		  $("#regform_wrap").addClass("wrapped");
-		  $("#regform_wrap .cost-container").addClass("closed");
-	  } else {
-		  $("#regform_wrap").removeClass("wrapped");
-		  $("#regform_wrap .cost-container").removeClass("closed");
-	  }
-  });
+	clearTimeout(window.resizedFinished);
+	window.resizedFinished = setTimeout(function(){
+		$(".cost-container").css("width", $(".sidebar-container").width()+"px");
+		if ($("#regform_wrap").width() < 600) {
+			$("#regform_wrap").addClass("wrapped");
+			$("#regform_wrap .cost-container").addClass("closed");
+		} else {
+			$("#regform_wrap").removeClass("wrapped");
+			$("#regform_wrap .cost-container").removeClass("closed");
+		}
+	}, 250);
+});

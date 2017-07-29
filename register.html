@@ -142,649 +142,668 @@
 		</nav>
 		
 		<section class="main-content container-fluid" id="regform_wrap">
-			<div class="well" id="regform_wrap">
+			<div id="regform_wrap">
 				<div class="form">
-					<div class="section-header">
-						<h3>Personal Information</h3>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="nickname">Nickname <span class="required">*</span></label>
-						<input class="form-control" type="text" id="nickname" name="Nickname" maxlength="50">
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="dob">Date of birth <span class="required">*</span></label>
-						<input class="form-control" type="text" placeholder="yyyy-mm-dd" id="dob" name="Dob">
-					</div>
-					<div class="form-group">
-						<label class="control-label">Gender</label>
-						<div class="radio">
-							<label class="inline radio checked" for="male">
-								<input name="Gender" id="male" value="true" type="radio" checked="checked">
-								Male
-							</label>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Registration Information</h3>
 						</div>
-						<div class="radio">
-							<label class="inline radio" for="female">
-								<input name="Gender" id="female" value="false" type="radio">
-								Female
-							</label>
+						<div class="panel-body">
+							<ul>
+								<li><p>Information on how to pay is stated on your booking page and will be made available once your registration has been screened and approved.</p></li>
+								<li><p>Registrations are screened manually and it may take up to three days for a registration to be approved.</p></li>
+								<li><p>If you encounter a problem during the registration, please send an e-mail to <a href="mailto:registration@nordicfuzzcon.org">registration@nordicfuzzcon.org</a>.</p></li>
+							</ul>
 						</div>
 					</div>
-					<div class="form-group">
-						<label class="control-label" for="email">Email <span class="required">*</span></label>
-						<input class="form-control" type="text" id="email" name="Email" maxlength="100">
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="firstname">First name <span class="required">*</span></label>
-						<input class="form-control" type="text" id="firstname" name="FirstName" maxlength="30">
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="lastname">Last name <span class="required">*</span></label>
-						<input class="form-control" type="text" id="lastname" name="Lastname" maxlength="30">
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="street">Street <span class="required">*</span></label>
-						<input class="form-control" type="text" id="street" name="Street" maxlength="50">
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="zip">Zip <span class="required">*</span></label>
-						<input class="form-control" type="text" id="zip" name="Zip" maxlength="10">
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="city">City <span class="required">*</span></label>
-						<input class="form-control" type="text" id="city" name="City" maxlength="30">
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="state">State</label>
-						<input class="form-control" type="text" id="state" name="State" maxlength="30">
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="CountryId">Country <span class="required">*</span></label>
-						<select class="form-control" id="CountryId" name="CountryId">
-							<option value="0">Please select...</option>
-							<optgroup label="Nordic countries">
-								<option value="204">Sweden</option>
-								<option value="57">Denmark</option>
-								<option value="72">Finland</option>
-								<option value="98">Iceland</option>
-								<option value="161">Norway</option>
-								<option value="240">&#197;land Islands</option>
-							</optgroup>
-							<option value="3">Afghanistan</option>
-							<option value="4">Albania</option>
-							<option value="5">Algeria</option>
-							<option value="6">American Samoa</option>
-							<option value="7">Andorra</option>
-							<option value="8">Angola</option>
-							<option value="9">Anguilla</option>
-							<option value="10">Antarctica</option>
-							<option value="11">Antigua and/or Barbuda</option>
-							<option value="12">Argentina</option>
-							<option value="13">Armenia</option>
-							<option value="14">Aruba</option>
-							<option value="15">Australia</option>
-							<option value="16">Austria</option>
-							<option value="17">Azerbaijan</option>
-							<option value="18">Bahamas</option>
-							<option value="19">Bahrain</option>
-							<option value="20">Bangladesh</option>
-							<option value="21">Barbados</option>
-							<option value="22">Belarus</option>
-							<option value="23">Belgium</option>
-							<option value="24">Belize</option>
-							<option value="25">Benin</option>
-							<option value="26">Bermuda</option>
-							<option value="27">Bhutan</option>
-							<option value="28">Bolivia</option>
-							<option value="29">Bosnia and Herzegovina</option>
-							<option value="30">Botswana</option>
-							<option value="31">Bouvet Island</option>
-							<option value="32">Brazil</option>
-							<option value="33">British lndian Ocean Territory</option>
-							<option value="34">Brunei Darussalam</option>
-							<option value="35">Bulgaria</option>
-							<option value="36">Burkina Faso</option>
-							<option value="37">Burundi</option>
-							<option value="38">Cambodia</option>
-							<option value="39">Cameroon</option>
-							<option value="2">Canada</option>
-							<option value="40">Cape Verde</option>
-							<option value="41">Cayman Islands</option>
-							<option value="42">Central African Republic</option>
-							<option value="43">Chad</option>
-							<option value="44">Chile</option>
-							<option value="45">China</option>
-							<option value="46">Christmas Island</option>
-							<option value="47">Cocos (Keeling) Islands</option>
-							<option value="48">Colombia</option>
-							<option value="49">Comoros</option>
-							<option value="50">Congo</option>
-							<option value="51">Cook Islands</option>
-							<option value="52">Costa Rica</option>
-							<option value="53">Croatia (Hrvatska)</option>
-							<option value="54">Cuba</option>
-							<option value="55">Cyprus</option>
-							<option value="56">Czech Republic</option>
-							<option value="58">Djibouti</option>
-							<option value="59">Dominica</option>
-							<option value="60">Dominican Republic</option>
-							<option value="61">East Timor</option>
-							<option value="62">Ecudaor</option>
-							<option value="63">Egypt</option>
-							<option value="64">El Salvador</option>
-							<option value="65">Equatorial Guinea</option>
-							<option value="66">Eritrea</option>
-							<option value="67">Estonia</option>
-							<option value="68">Ethiopia</option>
-							<option value="69">Falkland Islands (Malvinas)</option>
-							<option value="70">Faroe Islands</option>
-							<option value="71">Fiji</option>
-							<option value="73">France</option>
-							<option value="74">France, Metropolitan</option>
-							<option value="75">French Guiana</option>
-							<option value="76">French Polynesia</option>
-							<option value="77">French Southern Territories</option>
-							<option value="78">Gabon</option>
-							<option value="79">Gambia</option>
-							<option value="80">Georgia</option>
-							<option value="81">Germany</option>
-							<option value="82">Ghana</option>
-							<option value="83">Gibraltar</option>
-							<option value="84">Greece</option>
-							<option value="85">Greenland</option>
-							<option value="86">Grenada</option>
-							<option value="87">Guadeloupe</option>
-							<option value="88">Guam</option>
-							<option value="89">Guatemala</option>
-							<option value="90">Guinea</option>
-							<option value="91">Guinea-Bissau</option>
-							<option value="92">Guyana</option>
-							<option value="93">Haiti</option>
-							<option value="94">Heard and Mc Donald Islands</option>
-							<option value="95">Honduras</option>
-							<option value="96">Hong Kong</option>
-							<option value="97">Hungary</option>
-							<option value="99">India</option>
-							<option value="100">Indonesia</option>
-							<option value="101">Iran (Islamic Republic of)</option>
-							<option value="102">Iraq</option>
-							<option value="103">Ireland</option>
-							<option value="104">Israel</option>
-							<option value="105">Italy</option>
-							<option value="106">Ivory Coast</option>
-							<option value="107">Jamaica</option>
-							<option value="108">Japan</option>
-							<option value="109">Jordan</option>
-							<option value="110">Kazakhstan</option>
-							<option value="111">Kenya</option>
-							<option value="112">Kiribati</option>
-							<option value="113">Korea, Democratic People&#39;s Republic of</option>
-							<option value="114">Korea, Republic of</option>
-							<option value="115">Kuwait</option>
-							<option value="116">Kyrgyzstan</option>
-							<option value="117">Lao People&#39;s Democratic Republic</option>
-							<option value="118">Latvia</option>
-							<option value="119">Lebanon</option>
-							<option value="120">Lesotho</option>
-							<option value="121">Liberia</option>
-							<option value="122">Libyan Arab Jamahiriya</option>
-							<option value="123">Liechtenstein</option>
-							<option value="124">Lithuania</option>
-							<option value="125">Luxembourg</option>
-							<option value="126">Macau</option>
-							<option value="127">Macedonia</option>
-							<option value="128">Madagascar</option>
-							<option value="129">Malawi</option>
-							<option value="130">Malaysia</option>
-							<option value="131">Maldives</option>
-							<option value="132">Mali</option>
-							<option value="133">Malta</option>
-							<option value="134">Marshall Islands</option>
-							<option value="135">Martinique</option>
-							<option value="136">Mauritania</option>
-							<option value="137">Mauritius</option>
-							<option value="138">Mayotte</option>
-							<option value="139">Mexico</option>
-							<option value="140">Micronesia, Federated States of</option>
-							<option value="141">Moldova, Republic of</option>
-							<option value="142">Monaco</option>
-							<option value="143">Mongolia</option>
-							<option value="144">Montserrat</option>
-							<option value="145">Morocco</option>
-							<option value="146">Mozambique</option>
-							<option value="147">Myanmar</option>
-							<option value="148">Namibia</option>
-							<option value="149">Nauru</option>
-							<option value="150">Nepal</option>
-							<option value="151">Netherlands</option>
-							<option value="152">Netherlands Antilles</option>
-							<option value="153">New Caledonia</option>
-							<option value="154">New Zealand</option>
-							<option value="155">Nicaragua</option>
-							<option value="156">Niger</option>
-							<option value="157">Nigeria</option>
-							<option value="158">Niue</option>
-							<option value="159">Norfork Island</option>
-							<option value="160">Northern Mariana Islands</option>
-							<option value="162">Oman</option>
-							<option value="163">Pakistan</option>
-							<option value="164">Palau</option>
-							<option value="165">Panama</option>
-							<option value="166">Papua New Guinea</option>
-							<option value="167">Paraguay</option>
-							<option value="168">Peru</option>
-							<option value="169">Philippines</option>
-							<option value="170">Pitcairn</option>
-							<option value="171">Poland</option>
-							<option value="172">Portugal</option>
-							<option value="173">Puerto Rico</option>
-							<option value="174">Qatar</option>
-							<option value="175">Reunion</option>
-							<option value="176">Romania</option>
-							<option value="177">Russian Federation</option>
-							<option value="178">Rwanda</option>
-							<option value="179">Saint Kitts and Nevis</option>
-							<option value="180">Saint Lucia</option>
-							<option value="181">Saint Vincent and the Grenadines</option>
-							<option value="182">Samoa</option>
-							<option value="183">San Marino</option>
-							<option value="184">Sao Tome and Principe</option>
-							<option value="185">Saudi Arabia</option>
-							<option value="186">Senegal</option>
-							<option value="187">Seychelles</option>
-							<option value="188">Sierra Leone</option>
-							<option value="189">Singapore</option>
-							<option value="190">Slovakia</option>
-							<option value="191">Slovenia</option>
-							<option value="192">Solomon Islands</option>
-							<option value="193">Somalia</option>
-							<option value="194">South Africa</option>
-							<option value="195">South Georgia South Sandwich Islands</option>
-							<option value="196">Spain</option>
-							<option value="197">Sri Lanka</option>
-							<option value="198">St. Helena</option>
-							<option value="199">St. Pierre and Miquelon</option>
-							<option value="200">Sudan</option>
-							<option value="201">Suriname</option>
-							<option value="202">Svalbarn and Jan Mayen Islands</option>
-							<option value="203">Swaziland</option>
-							<option value="205">Switzerland</option>
-							<option value="206">Syrian Arab Republic</option>
-							<option value="207">Taiwan</option>
-							<option value="208">Tajikistan</option>
-							<option value="209">Tanzania, United Republic of</option>
-							<option value="210">Thailand</option>
-							<option value="211">Togo</option>
-							<option value="212">Tokelau</option>
-							<option value="213">Tonga</option>
-							<option value="214">Trinidad and Tobago</option>
-							<option value="215">Tunisia</option>
-							<option value="216">Turkey</option>
-							<option value="217">Turkmenistan</option>
-							<option value="218">Turks and Caicos Islands</option>
-							<option value="219">Tuvalu</option>
-							<option value="220">Uganda</option>
-							<option value="221">Ukraine</option>
-							<option value="222">United Arab Emirates</option>
-							<option value="223">United Kingdom</option>
-							<option value="1">United States</option>
-							<option value="224">United States minor outlying islands</option>
-							<option value="225">Uruguay</option>
-							<option value="226">Uzbekistan</option>
-							<option value="233">Wallis and Futuna Islands</option>
-							<option value="227">Vanuatu</option>
-							<option value="228">Vatican City State</option>
-							<option value="229">Venezuela</option>
-							<option value="234">Western Sahara</option>
-							<option value="230">Vietnam</option>
-							<option value="232">Virgin Islands (U.S.)</option>
-							<option value="231">Virigan Islands (British)</option>
-							<option value="235">Yemen</option>
-							<option value="236">Yugoslavia</option>
-							<option value="237">Zaire</option>
-							<option value="238">Zambia</option>
-							<option value="239">Zimbabwe</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="phone">Phone</label>
-						<input class="form-control" type="text" id="phone" name="Phone" maxlength="30">
-					</div>
-					<div class="section-header">
-						<h3>Pet Or Service Animal</h3>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="bring_a_pet">
-								<input type="checkbox" value="true" id="bring_a_pet" name="BringAPet">
-								I want to bring my pet dog or service animal to the convention (registration staff will contact you after you have signed up)
-							</label>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Personal Information</h3>
+						</div>
+						<div class="panel-body">
+							<div class="form-group">
+								<label class="control-label" for="nickname">Nickname <span class="required">*</span></label>
+								<input class="form-control" type="text" id="nickname" name="Nickname" maxlength="50">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="dob">Date of birth <span class="required">*</span></label>
+								<input class="form-control" type="text" placeholder="yyyy-mm-dd" id="dob" name="Dob">
+							</div>
+							<div class="form-group">
+								<label class="control-label">Gender</label>
+								<div class="radio">
+									<label class="inline radio checked" for="male">
+										<input name="Gender" id="male" value="true" type="radio" checked="checked">
+										Male
+									</label>
+								</div>
+								<div class="radio">
+									<label class="inline radio" for="female">
+										<input name="Gender" id="female" value="false" type="radio">
+										Female
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="email">Email <span class="required">*</span></label>
+								<input class="form-control" type="text" id="email" name="Email" maxlength="100">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="firstname">First name <span class="required">*</span></label>
+								<input class="form-control" type="text" id="firstname" name="FirstName" maxlength="30">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="lastname">Last name <span class="required">*</span></label>
+								<input class="form-control" type="text" id="lastname" name="Lastname" maxlength="30">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="street">Street <span class="required">*</span></label>
+								<input class="form-control" type="text" id="street" name="Street" maxlength="50">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="zip">Zip <span class="required">*</span></label>
+								<input class="form-control" type="text" id="zip" name="Zip" maxlength="10">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="city">City <span class="required">*</span></label>
+								<input class="form-control" type="text" id="city" name="City" maxlength="30">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="state">State</label>
+								<input class="form-control" type="text" id="state" name="State" maxlength="30">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="CountryId">Country <span class="required">*</span></label>
+								<select class="form-control" id="CountryId" name="CountryId">
+									<option value="0">Please select...</option>
+									<optgroup label="Nordic countries">
+										<option value="204">Sweden</option>
+										<option value="57">Denmark</option>
+										<option value="72">Finland</option>
+										<option value="98">Iceland</option>
+										<option value="161">Norway</option>
+										<option value="240">&#197;land Islands</option>
+									</optgroup>
+									<option value="3">Afghanistan</option>
+									<option value="4">Albania</option>
+									<option value="5">Algeria</option>
+									<option value="6">American Samoa</option>
+									<option value="7">Andorra</option>
+									<option value="8">Angola</option>
+									<option value="9">Anguilla</option>
+									<option value="10">Antarctica</option>
+									<option value="11">Antigua and/or Barbuda</option>
+									<option value="12">Argentina</option>
+									<option value="13">Armenia</option>
+									<option value="14">Aruba</option>
+									<option value="15">Australia</option>
+									<option value="16">Austria</option>
+									<option value="17">Azerbaijan</option>
+									<option value="18">Bahamas</option>
+									<option value="19">Bahrain</option>
+									<option value="20">Bangladesh</option>
+									<option value="21">Barbados</option>
+									<option value="22">Belarus</option>
+									<option value="23">Belgium</option>
+									<option value="24">Belize</option>
+									<option value="25">Benin</option>
+									<option value="26">Bermuda</option>
+									<option value="27">Bhutan</option>
+									<option value="28">Bolivia</option>
+									<option value="29">Bosnia and Herzegovina</option>
+									<option value="30">Botswana</option>
+									<option value="31">Bouvet Island</option>
+									<option value="32">Brazil</option>
+									<option value="33">British lndian Ocean Territory</option>
+									<option value="34">Brunei Darussalam</option>
+									<option value="35">Bulgaria</option>
+									<option value="36">Burkina Faso</option>
+									<option value="37">Burundi</option>
+									<option value="38">Cambodia</option>
+									<option value="39">Cameroon</option>
+									<option value="2">Canada</option>
+									<option value="40">Cape Verde</option>
+									<option value="41">Cayman Islands</option>
+									<option value="42">Central African Republic</option>
+									<option value="43">Chad</option>
+									<option value="44">Chile</option>
+									<option value="45">China</option>
+									<option value="46">Christmas Island</option>
+									<option value="47">Cocos (Keeling) Islands</option>
+									<option value="48">Colombia</option>
+									<option value="49">Comoros</option>
+									<option value="50">Congo</option>
+									<option value="51">Cook Islands</option>
+									<option value="52">Costa Rica</option>
+									<option value="53">Croatia (Hrvatska)</option>
+									<option value="54">Cuba</option>
+									<option value="55">Cyprus</option>
+									<option value="56">Czech Republic</option>
+									<option value="58">Djibouti</option>
+									<option value="59">Dominica</option>
+									<option value="60">Dominican Republic</option>
+									<option value="61">East Timor</option>
+									<option value="62">Ecudaor</option>
+									<option value="63">Egypt</option>
+									<option value="64">El Salvador</option>
+									<option value="65">Equatorial Guinea</option>
+									<option value="66">Eritrea</option>
+									<option value="67">Estonia</option>
+									<option value="68">Ethiopia</option>
+									<option value="69">Falkland Islands (Malvinas)</option>
+									<option value="70">Faroe Islands</option>
+									<option value="71">Fiji</option>
+									<option value="73">France</option>
+									<option value="74">France, Metropolitan</option>
+									<option value="75">French Guiana</option>
+									<option value="76">French Polynesia</option>
+									<option value="77">French Southern Territories</option>
+									<option value="78">Gabon</option>
+									<option value="79">Gambia</option>
+									<option value="80">Georgia</option>
+									<option value="81">Germany</option>
+									<option value="82">Ghana</option>
+									<option value="83">Gibraltar</option>
+									<option value="84">Greece</option>
+									<option value="85">Greenland</option>
+									<option value="86">Grenada</option>
+									<option value="87">Guadeloupe</option>
+									<option value="88">Guam</option>
+									<option value="89">Guatemala</option>
+									<option value="90">Guinea</option>
+									<option value="91">Guinea-Bissau</option>
+									<option value="92">Guyana</option>
+									<option value="93">Haiti</option>
+									<option value="94">Heard and Mc Donald Islands</option>
+									<option value="95">Honduras</option>
+									<option value="96">Hong Kong</option>
+									<option value="97">Hungary</option>
+									<option value="99">India</option>
+									<option value="100">Indonesia</option>
+									<option value="101">Iran (Islamic Republic of)</option>
+									<option value="102">Iraq</option>
+									<option value="103">Ireland</option>
+									<option value="104">Israel</option>
+									<option value="105">Italy</option>
+									<option value="106">Ivory Coast</option>
+									<option value="107">Jamaica</option>
+									<option value="108">Japan</option>
+									<option value="109">Jordan</option>
+									<option value="110">Kazakhstan</option>
+									<option value="111">Kenya</option>
+									<option value="112">Kiribati</option>
+									<option value="113">Korea, Democratic People&#39;s Republic of</option>
+									<option value="114">Korea, Republic of</option>
+									<option value="115">Kuwait</option>
+									<option value="116">Kyrgyzstan</option>
+									<option value="117">Lao People&#39;s Democratic Republic</option>
+									<option value="118">Latvia</option>
+									<option value="119">Lebanon</option>
+									<option value="120">Lesotho</option>
+									<option value="121">Liberia</option>
+									<option value="122">Libyan Arab Jamahiriya</option>
+									<option value="123">Liechtenstein</option>
+									<option value="124">Lithuania</option>
+									<option value="125">Luxembourg</option>
+									<option value="126">Macau</option>
+									<option value="127">Macedonia</option>
+									<option value="128">Madagascar</option>
+									<option value="129">Malawi</option>
+									<option value="130">Malaysia</option>
+									<option value="131">Maldives</option>
+									<option value="132">Mali</option>
+									<option value="133">Malta</option>
+									<option value="134">Marshall Islands</option>
+									<option value="135">Martinique</option>
+									<option value="136">Mauritania</option>
+									<option value="137">Mauritius</option>
+									<option value="138">Mayotte</option>
+									<option value="139">Mexico</option>
+									<option value="140">Micronesia, Federated States of</option>
+									<option value="141">Moldova, Republic of</option>
+									<option value="142">Monaco</option>
+									<option value="143">Mongolia</option>
+									<option value="144">Montserrat</option>
+									<option value="145">Morocco</option>
+									<option value="146">Mozambique</option>
+									<option value="147">Myanmar</option>
+									<option value="148">Namibia</option>
+									<option value="149">Nauru</option>
+									<option value="150">Nepal</option>
+									<option value="151">Netherlands</option>
+									<option value="152">Netherlands Antilles</option>
+									<option value="153">New Caledonia</option>
+									<option value="154">New Zealand</option>
+									<option value="155">Nicaragua</option>
+									<option value="156">Niger</option>
+									<option value="157">Nigeria</option>
+									<option value="158">Niue</option>
+									<option value="159">Norfork Island</option>
+									<option value="160">Northern Mariana Islands</option>
+									<option value="162">Oman</option>
+									<option value="163">Pakistan</option>
+									<option value="164">Palau</option>
+									<option value="165">Panama</option>
+									<option value="166">Papua New Guinea</option>
+									<option value="167">Paraguay</option>
+									<option value="168">Peru</option>
+									<option value="169">Philippines</option>
+									<option value="170">Pitcairn</option>
+									<option value="171">Poland</option>
+									<option value="172">Portugal</option>
+									<option value="173">Puerto Rico</option>
+									<option value="174">Qatar</option>
+									<option value="175">Reunion</option>
+									<option value="176">Romania</option>
+									<option value="177">Russian Federation</option>
+									<option value="178">Rwanda</option>
+									<option value="179">Saint Kitts and Nevis</option>
+									<option value="180">Saint Lucia</option>
+									<option value="181">Saint Vincent and the Grenadines</option>
+									<option value="182">Samoa</option>
+									<option value="183">San Marino</option>
+									<option value="184">Sao Tome and Principe</option>
+									<option value="185">Saudi Arabia</option>
+									<option value="186">Senegal</option>
+									<option value="187">Seychelles</option>
+									<option value="188">Sierra Leone</option>
+									<option value="189">Singapore</option>
+									<option value="190">Slovakia</option>
+									<option value="191">Slovenia</option>
+									<option value="192">Solomon Islands</option>
+									<option value="193">Somalia</option>
+									<option value="194">South Africa</option>
+									<option value="195">South Georgia South Sandwich Islands</option>
+									<option value="196">Spain</option>
+									<option value="197">Sri Lanka</option>
+									<option value="198">St. Helena</option>
+									<option value="199">St. Pierre and Miquelon</option>
+									<option value="200">Sudan</option>
+									<option value="201">Suriname</option>
+									<option value="202">Svalbarn and Jan Mayen Islands</option>
+									<option value="203">Swaziland</option>
+									<option value="205">Switzerland</option>
+									<option value="206">Syrian Arab Republic</option>
+									<option value="207">Taiwan</option>
+									<option value="208">Tajikistan</option>
+									<option value="209">Tanzania, United Republic of</option>
+									<option value="210">Thailand</option>
+									<option value="211">Togo</option>
+									<option value="212">Tokelau</option>
+									<option value="213">Tonga</option>
+									<option value="214">Trinidad and Tobago</option>
+									<option value="215">Tunisia</option>
+									<option value="216">Turkey</option>
+									<option value="217">Turkmenistan</option>
+									<option value="218">Turks and Caicos Islands</option>
+									<option value="219">Tuvalu</option>
+									<option value="220">Uganda</option>
+									<option value="221">Ukraine</option>
+									<option value="222">United Arab Emirates</option>
+									<option value="223">United Kingdom</option>
+									<option value="1">United States</option>
+									<option value="224">United States minor outlying islands</option>
+									<option value="225">Uruguay</option>
+									<option value="226">Uzbekistan</option>
+									<option value="233">Wallis and Futuna Islands</option>
+									<option value="227">Vanuatu</option>
+									<option value="228">Vatican City State</option>
+									<option value="229">Venezuela</option>
+									<option value="234">Western Sahara</option>
+									<option value="230">Vietnam</option>
+									<option value="232">Virgin Islands (U.S.)</option>
+									<option value="231">Virigan Islands (British)</option>
+									<option value="235">Yemen</option>
+									<option value="236">Yugoslavia</option>
+									<option value="237">Zaire</option>
+									<option value="238">Zambia</option>
+									<option value="239">Zimbabwe</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="phone">Phone</label>
+								<input class="form-control" type="text" id="phone" name="Phone" maxlength="30">
+							</div>
 						</div>
 					</div>
-					<div class="section-header">
-						<h3>Fursuit?</h3>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="fursuiter">
-								<input type="checkbox" value="true" id="fursuiter" name="PlanToFursuit">
-								I'm a fursuiter and plan to bring one/more fursuit(s) and want a free fursuit badge
-							</label>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Main Section</h3>
 						</div>
-					</div>
-					<div class="section-header">
-						<h3>Additional Information</h3>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="first_furry_convention">
-								<input type="checkbox" value="true" id="first_furry_convention" name="FirstFurryConvention">
-								This is my first furry convention
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="possible_panel_holder">
-								<input type="checkbox" value="true" id="possible_panel_holder" name="InterestedInHoldingAPanel">
-								I'm interested in holding a panel at the convention
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="volunteer">
-								<input type="checkbox" value="true" id="volunteer" name="WantsToVolunteer">
-								I want to volunteer at the convention
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="vegetarian">
-								<input type="checkbox" value="true" id="vegetarian" name="IsVegetarian">
-								I'm a vegetarian
-							</label>
-						</div>
-					</div>
-					<!--@*<div class="form-group">
-						<label class="checkbox" for="interested_in_staying_in_the_party_wing">
-							<input type="checkbox" value="true" id="interested_in_staying_in_the_party_wing" name="InterestedInStayingInThePartyWing">
-							I wish to stay in the party wing (not a guarantee it will happen 2017)<br/>
-							<span style="font-style: italic;">Both you and your room share partner(s) must have selected this option.</span>
-						</label>
-					</div>*@-->
-					<div class="section-header">
-						<h3>Your Interests</h3>
-					</div>
-					<p class="help-block">Help us arrange more panels that appeal to you!</p>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="gaming_events">
-								<input type="checkbox" value="true" id="gaming_events" name="InterestedInGamingEvents">
-								I'm interested in video gaming events
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="board_gaming_events">
-								<input type="checkbox" value="true" id="board_gaming_events" name="InterestedInBoardGamingEvents">
-								I'm interested in board gaming events
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="food_events">
-								<input type="checkbox" value="true" id="food_events" name="InterestedInFoodEvents">
-								I'm interested in food related events
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="goh_events">
-								<input type="checkbox" value="true" id="goh_events" name="InterestedInGohEvents">
-								I'm interested in Guest of Honour events
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="music_events">
-								<input type="checkbox" value="true" id="music_events" name="InterestedInMusicEvents">
-								I'm interested in music events
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="art_events">
-								<input type="checkbox" value="true" id="art_events" name="InterestedInArtEvents">
-								I'm interested in art events
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="writing_events">
-								<input type="checkbox" value="true" id="writing_events" name="InterestedInWritingEvents">
-								I'm interested in writing events
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="fursuiting_events">
-								<input type="checkbox" value="true" id="fursuiting_events" name="InterestedInFursuitingEvents">
-								I'm interested in fursuiting events
-							</label>
-						</div>
-					</div>
-					<div class="section-header">
-						<h3>Dealers' Den</h3>
-					</div>
-					<div id="DealersDenContainer">
-						<div class="form-group">
-							<div class="checkbox">
-								<label for="possible_dealer">
-									<input type="checkbox" value="true" id="possible_dealer" name="WantsToSellAtTheConvention">
-									I would like a Dealers' Den spot
+						<div class="panel-body">
+							<div class="section-header">
+								<h3>Pet Or Service Animal</h3>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="bring_a_pet">
+										<input type="checkbox" value="true" id="bring_a_pet" name="BringAPet">
+										I want to bring my pet dog or service animal to the convention (registration staff will contact you after you have signed up)
+									</label>
+								</div>
+							</div>
+							<div class="section-header">
+								<h3>Fursuit?</h3>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="fursuiter">
+										<input type="checkbox" value="true" id="fursuiter" name="PlanToFursuit">
+										I'm a fursuiter and plan to bring one/more fursuit(s) and want a free fursuit badge
+									</label>
+								</div>
+							</div>
+							<div class="section-header">
+								<h3>Additional Information</h3>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="first_furry_convention">
+										<input type="checkbox" value="true" id="first_furry_convention" name="FirstFurryConvention">
+										This is my first furry convention
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="possible_panel_holder">
+										<input type="checkbox" value="true" id="possible_panel_holder" name="InterestedInHoldingAPanel">
+										I'm interested in holding a panel at the convention
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="volunteer">
+										<input type="checkbox" value="true" id="volunteer" name="WantsToVolunteer">
+										I want to volunteer at the convention
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="vegetarian">
+										<input type="checkbox" value="true" id="vegetarian" name="IsVegetarian">
+										I'm a vegetarian
+									</label>
+								</div>
+							</div>
+							<!--@*<div class="form-group">
+								<label class="checkbox" for="interested_in_staying_in_the_party_wing">
+									<input type="checkbox" value="true" id="interested_in_staying_in_the_party_wing" name="InterestedInStayingInThePartyWing">
+									I wish to stay in the party wing (not a guarantee it will happen 2017)<br/>
+									<span style="font-style: italic;">Both you and your room share partner(s) must have selected this option.</span>
 								</label>
+							</div>*@-->
+							<div class="section-header">
+								<h3>Your Interests</h3>
 							</div>
-							<div class="help-block">
-								Read more about selling in the Dealers' Den <a href="/Program/DealersDen" target="dealersden">here</a>. Number of spots left can be seen under <a href="">availability</a>.
-							</div>
-						</div>
-					</div>
-					<p id="DealersDenContainerNotAvailable">You can not reserve a spot in the Dealers' Den with a single day ticket.</p>
-					<div class="section-header">
-						<h3>Comments or Additional Information</h3>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="comments">Comments</label>
-						<textarea class="form-control" rows="5" cols="30" id="comments" name="Comments"></textarea>
-					</div>
-					<div class="section-header">
-						<h3>Attending &amp; Accomodation</h3>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="attending_type">Attending Type <span class="required">*</span></label>
-						<select class="form-control" id="attending_type" name="AttendingTypeId"></select>
-						<div class="sponsor bonus-options" style="display:none;">
-							<legend>Sponsor exclusive options</legend>
-							<p class="help-block">As a sponsor, you get one free t-shirt and can buy a ticket to the ice cream buffet:</p>
+							<p class="help-block">Help us arrange more panels that appeal to you!</p>
 							<div class="form-group">
-								<label class="control-label sponsor_tshirt_size" for="sponsor_tshirt_size">T-shirt size</label>
-								<select class="form-control" id="sponsor_tshirt_size" name="TshirtProductIdSponsor"></select>
-								<i class="icon-help-circled sponsor_tshirt_size"></i>
+								<div class="checkbox">
+									<label for="gaming_events">
+										<input type="checkbox" value="true" id="gaming_events" name="InterestedInGamingEvents">
+										I'm interested in video gaming events
+									</label>
+								</div>
 							</div>
 							<div class="form-group">
-								<input class="form-control" type="checkbox" id="sponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSponsor">
-								<label class="control-label sponsor_ice_cream_buffet" for="sponsor_ice_cream_buffet">
+								<div class="checkbox">
+									<label for="board_gaming_events">
+										<input type="checkbox" value="true" id="board_gaming_events" name="InterestedInBoardGamingEvents">
+										I'm interested in board gaming events
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="food_events">
+										<input type="checkbox" value="true" id="food_events" name="InterestedInFoodEvents">
+										I'm interested in food related events
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="goh_events">
+										<input type="checkbox" value="true" id="goh_events" name="InterestedInGohEvents">
+										I'm interested in Guest of Honour events
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="music_events">
+										<input type="checkbox" value="true" id="music_events" name="InterestedInMusicEvents">
+										I'm interested in music events
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="art_events">
+										<input type="checkbox" value="true" id="art_events" name="InterestedInArtEvents">
+										I'm interested in art events
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="writing_events">
+										<input type="checkbox" value="true" id="writing_events" name="InterestedInWritingEvents">
+										I'm interested in writing events
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="fursuiting_events">
+										<input type="checkbox" value="true" id="fursuiting_events" name="InterestedInFursuitingEvents">
+										I'm interested in fursuiting events
+									</label>
+								</div>
+							</div>
+							<div class="section-header">
+								<h3>Dealers' Den</h3>
+							</div>
+							<div id="DealersDenContainer">
+								<div class="form-group">
+									<div class="checkbox">
+										<label for="possible_dealer">
+											<input type="checkbox" value="true" id="possible_dealer" name="WantsToSellAtTheConvention">
+											I would like a Dealers' Den spot
+										</label>
+									</div>
+									<div class="help-block">
+										Read more about selling in the Dealers' Den <a href="/Program/DealersDen" target="dealersden">here</a>. Number of spots left can be seen under <a href="">availability</a>.
+									</div>
+								</div>
+							</div>
+							<p id="DealersDenContainerNotAvailable">You can not reserve a spot in the Dealers' Den with a single day ticket.</p>
+							<div class="section-header">
+								<h3>Comments or Additional Information</h3>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="comments">Comments</label>
+								<textarea class="form-control" rows="5" cols="30" id="comments" name="Comments"></textarea>
+							</div>
+							<div class="section-header">
+								<h3>Attending &amp; Accomodation</h3>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="attending_type">Attending Type <span class="required">*</span></label>
+								<select class="form-control" id="attending_type" name="AttendingTypeId"></select>
+								<div class="sponsor bonus-options" style="display:none;">
+									<legend>Sponsor exclusive options</legend>
+									<p class="help-block">As a sponsor, you get one free t-shirt and can buy a ticket to the ice cream buffet:</p>
+									<div class="form-group">
+										<label class="control-label sponsor_tshirt_size" for="sponsor_tshirt_size">T-shirt size</label>
+										<select class="form-control" id="sponsor_tshirt_size" name="TshirtProductIdSponsor"></select>
+										<i class="icon-help-circled sponsor_tshirt_size"></i>
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="checkbox" id="sponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSponsor">
+										<label class="control-label sponsor_ice_cream_buffet" for="sponsor_ice_cream_buffet">
 
-								</label>
-								<i class="icon-help-circled sponsor_ice_cream_buffet"></i>
-								<div class="help-block">More information about the Ice Cream buffet can be found <a href="/Reg/Prices" target="Prices">here</a>.</div>
+										</label>
+										<i class="icon-help-circled sponsor_ice_cream_buffet"></i>
+										<div class="help-block">More information about the Ice Cream buffet can be found <a href="/Reg/Prices" target="Prices">here</a>.</div>
+									</div>
+								</div>
+								<div class="superSponsor bonus-options" style="display:none;">
+									<legend>Super-Sponsor exclusive options</legend>
+									<p class="help-block">As a Super-Sponsor, you are granted <strong>FREE</strong> access to the following options:</p>
+									<div class="form-group">
+										<label class="inline superSponsor_tshirt_size" for="superSponsor_tshirt_size">T-shirt size</label>
+										<select class="form-control" id="superSponsor_tshirt_size" name="TshirtProductIdSuperSponsor"></select>
+										<i class="icon-help-circled superSponsor_tshirt_size"></i>
+									</div>
+									<div class="form-group">
+										<span id="superSponsor_ice_cream_buffet_label"></span>
+										<input class="form-control" type="hidden" id="superSponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSuperSponsor">
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="superSponsor bonus-options" style="display:none;">
-							<legend>Super-Sponsor exclusive options</legend>
-							<p class="help-block">As a Super-Sponsor, you are granted <strong>FREE</strong> access to the following options:</p>
+							<div class="form-group" id="accommodationMainDays">
+								<label class="control-label" for="accomodation_type">Accommodation <span class="required">*</span></label>
+								<select class="form-control" id="accomodation_type" name="AccomodationTypeId"></select>
+								<i class="icon-help-circled dinner"></i>
+								<div class="help-block">
+									More information about room types and the Party Wing can be found <a href="/Venue/Rooms" target="rooms">here</a>.<br/>
+									More information about room sharing can be found <a href="/Reg/RoomSharing" target="roomsharing">here</a>.
+								</div>
+							</div>
+							<div id="accommodationExtraDays">
+								<div class="form-group">
+									<label class="control-label" for="accomodation_type_super_early_arrival">Super Early Arrival</label>
+									<select class="form-control" id="accomodation_type_super_early_arrival" name="SuperEarlyArrivalId"></select>
+								</div>
+								<div class="form-group">
+									<label class="control-label" for="accomodation_type_early_arrival">Early Arrival</label>
+									<select class="form-control" id="accomodation_type_early_arrival" name="EarlyArrivalId"></select>
+								</div>
+								<div class="form-group">
+									<label class="control-label" for="accomodation_type_late_departure">Late Departure</label>
+									<select class="form-control" id="accomodation_type_late_departure" name="LateDepartureId"></select>
+								</div>
+							</div>
+							<div class="section-header">
+								<h3>Extras</h3>
+							</div>
 							<div class="form-group">
-								<label class="inline superSponsor_tshirt_size" for="superSponsor_tshirt_size">T-shirt size</label>
-								<select class="form-control" id="superSponsor_tshirt_size" name="TshirtProductIdSuperSponsor"></select>
-								<i class="icon-help-circled superSponsor_tshirt_size"></i>
+								<label class="control-label" for="buffet_tickets">Buffet tickets</label>
+								<select class="form-control" id="buffet_tickets" name="NumberOfBuffetTickets"></select>
+								<i class="icon-help-circled dinner"></i>
+								<div class="help-block">
+									We are proud over our very popular dinner buffets. You can read more about them <a href="/Venue/Dinner" target="Dinner">here</a>.<br/>
+									<span class="help-block">The Dying Dog Dinner is not included in the All-days inclusive buffet.</span>
+								</div>
+							</div>
+							<div class="section-heading">
+								<h3>Events</h3>
 							</div>
 							<div class="form-group">
-								<span id="superSponsor_ice_cream_buffet_label"></span>
-								<input class="form-control" type="hidden" id="superSponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSuperSponsor">
+								<div class="checkbox">
+									<label class="control-label dead_dog" for="dead_dog">
+										<input type="checkbox" value="true" id="dead_dog" name="DeadDogEvent">
+										Dying Dog Dinner
+									</label>
+								</div>
+								<i class="icon-help-circled dead_dog"></i>
+								<div class="help-block">
+									More information about the Dying Dog Dinner event can be found <a href="/Program/DyingDogDinner" target="DyingDogDinner">here</a>.<br/>
+									<span class="help-block">The normal Dead Dog party is open to everyone.</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label class="control-label eat_sweden" for="eat_sweden">
+										<input type="checkbox" value="true" id="eat_sweden" name="EatSwedenEvent">
+										Eat Sweden
+									</label>
+								</div>
+								<i class="icon-help-circled eat_sweden"></i>
+								<div class="help-block">
+									More information about the buffet and Eat Sweden can be found <a href="/Program/EatSweden" target="EatSweden">here</a>.
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label class="control-label skansen" for="skansen">
+										<input type="checkbox" value="true" id="skansen" name="Skansen">
+										Skansen
+									</label>
+								</div>
+								<i class="icon-help-circled skansen"></i>
+								<div class="help-block">
+									More information about the trip to Skansen can be found <a href="/Program/Skansen" target="Skansen">here</a>.
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="furry_bus_arrival">FuzzBus arrival</label>
+								<select class="form-control" id="furry_bus_arrival" name="FurryBusArrivalId"></select>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="furry_bus_departure">FuzzBus departure</label>
+								<select class="form-control" id="furry_bus_departure" name="FurryBusDepartureId"></select>
+								<div class="help-block">More information about the FuzzBus can be found <a href="/Venue/FuzzBus" target="FuzzBus">here</a>.</div>
+							</div>
+							<div class="section-header">
+								<h3>T-shirts &amp; Extra Badges</h3>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="buy_more_tshirts_size">T-Shirt Size</label>
+								<select class="form-control" id="buy_more_tshirts_size" name="BuyTshirtProductId"></select>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="buy_more_tshirts">Number Of T-Shirts</label>
+								<select class="form-control" id="buy_more_tshirts" name="NumberOfTshirtsToBuy"></select>
+								<span class="help-block">You get one for free t-shirt if you are a Sponsor or a Super-Sponsor.</span>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="buy_more_fursuit_badges">Extra Fursuit Badges</label>
+								<select class="form-control" id="buy_more_fursuit_badges" name="BuyExtraFursuitBadgeProductId"></select>
+								<span class="help-block">Unavailable until you tick the checkbox 'I am a fursuiter' in the previous tab. The first fursuit badge is free.</span>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="wants_newsletter">
+										<input type="checkbox" value="true" id="wants_newsletter" name="WantNewsletter" checked="checked">
+										Please add me to the newsletter
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="is_18">
+										<input type="checkbox" value="true" id="is_18" name="IsCorrectAge">
+										I certify that I will be at least 18 years old when the convention starts
+										<span class="required">*</span>
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="accepted_terms_and_conditions">
+										<input type="checkbox" value="true" id="accepted_terms_and_conditions" name="AcceptedTermsAndConditions">
+										I accept the <a href="/About/Policies" target="Policies">Terms and Conditions</a>
+										<span class="required">*</span>
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label class="control-label" for="accepted_refund_terms">
+										<input type="checkbox" value="true" id="accepted_refund_terms" name="AcceptedCancellationRules">
+										I accept the <a href="javascript:void(0);" id="viewAcceptedCancellationRules">Refund and Cancellation terms</a>
+										<span class="required">*</span>
+									</label>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="form-group" id="accommodationMainDays">
-						<label class="control-label" for="accomodation_type">Accommodation <span class="required">*</span></label>
-						<select class="form-control" id="accomodation_type" name="AccomodationTypeId"></select>
-						<i class="icon-help-circled dinner"></i>
-						<div class="help-block">
-							More information about room types and the Party Wing can be found <a href="/Venue/Rooms" target="rooms">here</a>.<br/>
-							More information about room sharing can be found <a href="/Reg/RoomSharing" target="roomsharing">here</a>.
-						</div>
-					</div>
-					<div id="accommodationExtraDays">
-						<div class="form-group">
-							<label class="control-label" for="accomodation_type_super_early_arrival">Super Early Arrival</label>
-							<select class="form-control" id="accomodation_type_super_early_arrival" name="SuperEarlyArrivalId"></select>
-						</div>
-						<div class="form-group">
-							<label class="control-label" for="accomodation_type_early_arrival">Early Arrival</label>
-							<select class="form-control" id="accomodation_type_early_arrival" name="EarlyArrivalId"></select>
-						</div>
-						<div class="form-group">
-							<label class="control-label" for="accomodation_type_late_departure">Late Departure</label>
-							<select class="form-control" id="accomodation_type_late_departure" name="LateDepartureId"></select>
-						</div>
-					</div>
-					<div class="section-header">
-						<h3>Extras</h3>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="buffet_tickets">Buffet tickets</label>
-						<select class="form-control" id="buffet_tickets" name="NumberOfBuffetTickets"></select>
-						<i class="icon-help-circled dinner"></i>
-						<div class="help-block">
-							We are proud over our very popular dinner buffets. You can read more about them <a href="/Venue/Dinner" target="Dinner">here</a>.<br/>
-							<span class="help-block">The Dying Dog Dinner is not included in the All-days inclusive buffet.</span>
-						</div>
-					</div>
-					<div class="section-heading">
-						<h3>Events</h3>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label class="control-label dead_dog" for="dead_dog">
-								<input type="checkbox" value="true" id="dead_dog" name="DeadDogEvent">
-								Dying Dog Dinner
-							</label>
-						</div>
-						<i class="icon-help-circled dead_dog"></i>
-						<div class="help-block">
-							More information about the Dying Dog Dinner event can be found <a href="/Program/DyingDogDinner" target="DyingDogDinner">here</a>.<br/>
-							<span class="help-block">The normal Dead Dog party is open to everyone.</span>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label class="control-label eat_sweden" for="eat_sweden">
-								<input type="checkbox" value="true" id="eat_sweden" name="EatSwedenEvent">
-								Eat Sweden
-							</label>
-						</div>
-						<i class="icon-help-circled eat_sweden"></i>
-						<div class="help-block">
-							More information about the buffet and Eat Sweden can be found <a href="/Program/EatSweden" target="EatSweden">here</a>.
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label class="control-label skansen" for="skansen">
-								<input type="checkbox" value="true" id="skansen" name="Skansen">
-								Skansen
-							</label>
-						</div>
-						<i class="icon-help-circled skansen"></i>
-						<div class="help-block">
-							More information about the trip to Skansen can be found <a href="/Program/Skansen" target="Skansen">here</a>.
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="furry_bus_arrival">FuzzBus arrival</label>
-						<select class="form-control" id="furry_bus_arrival" name="FurryBusArrivalId"></select>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="furry_bus_departure">FuzzBus departure</label>
-						<select class="form-control" id="furry_bus_departure" name="FurryBusDepartureId"></select>
-						<div class="help-block">More information about the FuzzBus can be found <a href="/Venue/FuzzBus" target="FuzzBus">here</a>.</div>
-					</div>
-					<div class="section-header">
-						<h3>T-shirts &amp; Extra Badges</h3>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="buy_more_tshirts_size">T-Shirt Size</label>
-						<select class="form-control" id="buy_more_tshirts_size" name="BuyTshirtProductId"></select>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="buy_more_tshirts">Number Of T-Shirts</label>
-						<select class="form-control" id="buy_more_tshirts" name="NumberOfTshirtsToBuy"></select>
-						<span class="help-block">You get one for free t-shirt if you are a Sponsor or a Super-Sponsor.</span>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="buy_more_fursuit_badges">Extra Fursuit Badges</label>
-						<select class="form-control" id="buy_more_fursuit_badges" name="BuyExtraFursuitBadgeProductId"></select>
-						<span class="help-block">Unavailable until you tick the checkbox 'I am a fursuiter' in the previous tab. The first fursuit badge is free.</span>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="wants_newsletter">
-								<input type="checkbox" value="true" id="wants_newsletter" name="WantNewsletter" checked="checked">
-								Please add me to the newsletter
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="is_18">
-								<input type="checkbox" value="true" id="is_18" name="IsCorrectAge">
-								I certify that I will be at least 18 years old when the convention starts
-								<span class="required">*</span>
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label for="accepted_terms_and_conditions">
-								<input type="checkbox" value="true" id="accepted_terms_and_conditions" name="AcceptedTermsAndConditions">
-								I accept the <a href="/About/Policies" target="Policies">Terms and Conditions</a>
-								<span class="required">*</span>
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label class="control-label" for="accepted_refund_terms">
-								<input type="checkbox" value="true" id="accepted_refund_terms" name="AcceptedCancellationRules">
-								I accept the <a href="javascript:void(0);" id="viewAcceptedCancellationRules">Refund and Cancellation terms</a>
-								<span class="required">*</span>
-							</label>
-						</div>
-					</div>                    
-					<button type="submit" class="btn btn-default" id="btn-submit" value="Complete Registration">Complete Registration</button>
-					<p>
-						Information on how to pay is stated on your booking page and will be made available once your registration has been screened and approved.
-						<br>Registrations are screened manually and it may take up to three days for a registration to be approved.<br/>
-						If you encounter a problem during the registration, please send an e-mail to <a href="mailto:registration@nordicfuzzcon.org">registration@nordicfuzzcon.org</a>.
-					</p>
+                    
+					<button type="submit" class="btn btn-info btn-block" id="btn-submit" value="Complete Registration">Complete Registration</button>
 
 					<div id="contentAcceptedCancellationRules" style="display: none;">
 						<p>

@@ -142,21 +142,18 @@ a.btn {
 }
 
 .cost-container.affix {
-	top: 50px;
+	top: 70px;
 }
+
 
 .affix {
     position: fixed !important;
 }
 
-.wrapped .cost-container.affix {
-	top: auto;
-	bottom: 0;
-}
-
-.wrapped .cost-container.affix-bottom {
-	position: relative !important;
-	top: 0 !important;
+.wrapped .cost-container {
+	position: fixed;
+	bottom: 50px !important;
+	top: auto !important;
 }
 
 .cost-container .panel-body, .cost-container .panel-heading {
@@ -196,7 +193,7 @@ a.btn {
 }
 
 .cost-container {
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 .price-item {
