@@ -1,0 +1,205 @@
+.navbar-brand img {
+	height: 150%;
+    display: inline;
+    position: relative;
+    top: -30%;
+}
+
+.navbar-brand span {
+	font-size: 1.5em;
+	margin-left: 0.25em;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.collapse.navbar-collapse:not(.in) .usernameInput {
+	width: 7em !important;
+}
+
+.collapse.navbar-collapse:not(.in) .passwordInput {
+	width: 7em !important;
+}
+
+body {
+    padding-top: 50px;
+    position: relative !important;
+    padding-bottom: 7.75em;
+	min-height: 100vh;
+}
+
+body.userPage {
+	padding-top: 70px;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.submitButtonsContainer-scroller.scrolling {
+    position: fixed;
+    bottom: 0;
+	margin-bottom: -5px;
+    z-index: 5;
+    width: 100%;
+    background: #f8f8f8;
+    padding-top: 10px;
+    left: 0;
+    padding-left: 0px;
+	margin-left: 0px;
+}
+
+.page-header {
+    margin-top: 0px;
+}
+
+.submitButtonsContainer-scroller {
+    position: relative;
+    bottom: 0;
+    z-index: 5;
+    width: auto;
+    background: transparent;
+    padding-top: 0px;
+    left: 0;
+    padding-left: 0px;
+	margin-left: -15px;
+}
+
+.icon-link a {
+	padding-top: 9px !important;
+	padding-bottom: 9px !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.icon-link.telegram .fa-square {
+	color: #0088cc;
+}
+
+.icon-link.facebook .fa-square {
+	color: #3b5998;
+}
+
+.icon-link.twitter .fa-square {
+	color: #1da1f2;
+}
+
+.icon-link .fa-square {
+	color: #75C5F0;
+}
+
+.footer {
+	width: 100%;
+	margin-top: 1em;
+	padding: 1em;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 0;
+}
+
+.footer img {
+	height: 6em;
+	padding: 1em;
+}
+
+.page-intro.container-fluid {
+	width: 100%;
+	background-image: url("../img/Gunnerus_cEdit_1920wpx.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	min-height: 30em;
+}
+
+.mainPage section.calendar {
+	margin-top: -5em;
+}
+
+.cruiseDayForm .cal-day-inmonth {
+	cursor: pointer;
+}
+
+.selected-date {
+	background: #6695c5;
+}
+
+a.btn {
+	text-decoration: none;
+}
+.mainPage > section.container-fluid, .mainPage > section.container {
+	padding-top: 1em;
+}
+
+.navbar-collapse.collapsing .navbar-form .input-group, .navbar-collapse.collapse.in .navbar-form .input-group {
+    padding-bottom: 0.5em;
+}
+
+/* regform css */
+.total-price, .item-cost {
+	float: right;
+}
+
+.cost-container.affix {
+	top: 50px;
+}
+
+.affix {
+    position: fixed !important;
+}
+
+.wrapped .cost-container.affix {
+	top: auto;
+	bottom: 0;
+}
+
+.wrapped .cost-container.affix-bottom {
+	position: relative !important;
+	top: 0 !important;
+}
+
+.cost-container .panel-body, .cost-container .panel-heading {
+	transition: height 0.25s ease, padding 0.25s ease;
+	overflow: hidden;
+}
+
+.cost-container.closed .panel-body,
+.cost-container.closed .panel-heading {
+	height: 0;
+	padding: 0;
+}
+
+.form {
+	float:left;
+	width: 66%;
+	padding: 1em;
+}
+
+#regform_wrap.wrapped .sidebar-container,
+#regform_wrap.wrapped .form {
+	float: none;
+	width: 100%;
+}
+
+#regform_wrap::after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.sidebar-container {
+	float: left;
+	width: 33%;
+	padding: 1em;
+}
+
+.cost-container {
+	margin-top: 20px;
+}
+
+.price-item {
+	width: 100%;
+	display: inline-block;
+}
