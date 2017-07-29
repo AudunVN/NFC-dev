@@ -157,8 +157,66 @@ a.btn {
 }
 
 /* regform css */
-.total-price, .item-cost {
+.item-cost {
 	float: right;
+}
+
+
+.total-price {
+	float: right;
+}
+
+.total-price, .sum-label {
+	line-height: 36px;
+}
+
+.cost-container button {
+	display: none;
+}
+
+.wrapped .cost-container button {
+	display: inline;
+}
+
+.wrapped .cost-container .panel-heading:hover .glyphicon-remove {
+	color: #2f2f2f;
+}
+
+.cost-container .panel-heading .glyphicon-remove {
+	display: none; 
+}
+
+.wrapped .cost-container .panel-heading,
+.wrapped .cost-container .panel-footer {
+	cursor: pointer;
+}
+
+.wrapped .cost-container .panel-heading .glyphicon-remove {
+    position: absolute;
+    right: 0.75em;
+    top: 0.75em;
+	transition: color 0.25s ease;
+	display: inline;
+}
+
+.cost-container button .glyphicon-plus {
+	display: none;
+}
+
+.cost-container button .glyphicon-minus {
+	display: inline;
+}
+
+.cost-container.closed button .glyphicon-plus {
+	display: inline;
+}
+
+.cost-container.closed button .glyphicon-minus {
+	display: none;
+}
+
+.cost-container button {
+	margin-right: 0.5em;
 }
 
 .cost-container.affix {
@@ -170,13 +228,15 @@ a.btn {
 }
 
 .wrapped .cost-container {
-	position: fixed;
-	bottom: 50px !important;
+	position: fixed !important;
+	bottom: 0px !important;
 	top: auto !important;
+	margin-bottom: 0;
+	z-index: 5;
 }
 
 .cost-container .panel-body, .cost-container .panel-heading {
-	transition: height 0.25s ease, padding 0.25s ease;
+	transition: height 0.25s ease, padding 0.25s ease, opacity 0.25s ease;
 	overflow: hidden;
 }
 
@@ -184,22 +244,48 @@ a.btn {
 .cost-container.closed .panel-heading {
 	height: 0;
 	padding: 0;
+	opacity: 0;
+}
+
+.wrapped .sidebar-container {
+	height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.form-group label,
+.cost-container .panel-footer,
+ .noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none; 
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .form {
 	float:left;
 	width: 66%;
 	padding: 1em;
+	padding-bottom: 0;
 }
 
-#regform_wrap.wrapped .sidebar-container,
+#regform_wrap.wrapped  .sidebar-container,
 #regform_wrap.wrapped .form {
 	float: none;
 	width: 100%;
 }
 
-#regform_wrap.wrapped {
-	padding-bottom: 1.75em;
+#regform_wrap {
+	padding-bottom: 1.5em;
+}
+
+.clearfix::after {
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
 }
 
 #regform_wrap::after { 

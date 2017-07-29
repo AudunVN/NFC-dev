@@ -58,11 +58,11 @@ $(document).ready(function() {
 			transition: ["fade", "fade2"],
 			transitionDuration: 2e3,
 			slides: [
-				{src:"img/background/1.jpg",delay:9e3},
-				{src:"img/background/2.jpg",delay:9e3},
-				{src:"img/background/3.jpg",delay:9e3},
-				{src:"img/background/4.jpg",delay:9e3},
-				{src:"img/background/5.jpg",delay:9e3}
+				{src:"img/background/DSC08974_lq.jpg",delay:9e3},
+				{src:"img/background/DSC08988_lq.jpg",delay:9e3},
+				{src:"img/background/DSC09126_lq.jpg",delay:9e3},
+				{src:"img/background/DSC09130_lq.jpg",delay:9e3},
+				{src:"img/background/fs2017.jpg",delay:9e3}
 			],
 			overlay: "js/vegas/overlays/01.png"
 		});
@@ -71,6 +71,12 @@ $(document).ready(function() {
 	if (document.querySelector(".cost-container")) {
 		$(".cost-container").affix({offset: {top: $("#regform_wrap .form").position().top-$(".navbar").height(), bottom: $(document).outerHeight()-($("#regform_wrap").position().top+$("#regform_wrap").outerHeight())}});
 	}
+	
+	$(".toggle-cost-container").click(function() {
+		if (document.querySelector(".wrapped")) {
+			$(".cost-container").toggleClass("closed");
+		}
+	});
 	
 	resizeHandler();
 	

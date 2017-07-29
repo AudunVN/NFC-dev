@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8"> 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=600, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -64,7 +64,7 @@
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="navbar">
+				<div class="collapse navbar-collapse" id="navbar">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Username <span class="caret"></span></a>
@@ -147,7 +147,7 @@
 			</div>
 		</nav>
 		
-		<section class="main-content container-fluid" id="regform_wrap">
+		<section class="main-content container-fluid">
 			<div id="regform_wrap">
 				<div class="form">
 					<div class="panel panel-info">
@@ -168,11 +168,11 @@
 						</div>
 						<div class="panel-body">
 							<div class="form-group">
-								<label class="control-label" for="nickname">Nickname <span class="required">*</span></label>
+								<label class="control-label" for="nickname">Nickname </label>
 								<input class="form-control" type="text" id="nickname" name="Nickname" maxlength="50">
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="dob">Date of birth <span class="required">*</span></label>
+								<label class="control-label" for="dob">Date of birth </label>
 								<input class="form-control" type="text" placeholder="yyyy-mm-dd" id="dob" name="Dob">
 							</div>
 							<div class="form-group">
@@ -191,35 +191,35 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="email">Email <span class="required">*</span></label>
+								<label class="control-label" for="email">Email </label>
 								<input class="form-control" type="text" id="email" name="Email" maxlength="100">
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="firstname">First name <span class="required">*</span></label>
+								<label class="control-label" for="firstname">First name </label>
 								<input class="form-control" type="text" id="firstname" name="FirstName" maxlength="30">
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="lastname">Last name <span class="required">*</span></label>
+								<label class="control-label" for="lastname">Last name </label>
 								<input class="form-control" type="text" id="lastname" name="Lastname" maxlength="30">
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="street">Street <span class="required">*</span></label>
+								<label class="control-label" for="street">Street </label>
 								<input class="form-control" type="text" id="street" name="Street" maxlength="50">
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="zip">Zip <span class="required">*</span></label>
+								<label class="control-label" for="zip">Zip </label>
 								<input class="form-control" type="text" id="zip" name="Zip" maxlength="10">
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="city">City <span class="required">*</span></label>
+								<label class="control-label" for="city">City </label>
 								<input class="form-control" type="text" id="city" name="City" maxlength="30">
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="state">State</label>
+								<label class="control-label" for="state">State (optional)</label>
 								<input class="form-control" type="text" id="state" name="State" maxlength="30">
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="CountryId">Country <span class="required">*</span></label>
+								<label class="control-label" for="CountryId">Country </label>
 								<select class="form-control" id="CountryId" name="CountryId">
 									<option value="0">Please select...</option>
 									<optgroup label="Nordic countries">
@@ -467,7 +467,7 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="phone">Phone</label>
+								<label class="control-label" for="phone">Phone (optional)</label>
 								<input class="form-control" type="text" id="phone" name="Phone" maxlength="30">
 							</div>
 						</div>
@@ -637,7 +637,7 @@
 								<h3>Attending &amp; Accomodation</h3>
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="attending_type">Attending Type <span class="required">*</span></label>
+								<label class="control-label" for="attending_type">Attending Type </label>
 								<select class="form-control" id="attending_type" name="AttendingTypeId"></select>
 								<div class="sponsor bonus-options" style="display:none;">
 									<legend>Sponsor exclusive options</legend>
@@ -671,7 +671,7 @@
 								</div>
 							</div>
 							<div class="form-group" id="accommodationMainDays">
-								<label class="control-label" for="accomodation_type">Accommodation <span class="required">*</span></label>
+								<label class="control-label" for="accomodation_type">Accommodation </label>
 								<select class="form-control" id="accomodation_type" name="AccomodationTypeId"></select>
 								<i class="icon-help-circled dinner"></i>
 								<div class="help-block">
@@ -775,7 +775,7 @@
 								<div class="checkbox">
 									<label for="wants_newsletter">
 										<input type="checkbox" value="true" id="wants_newsletter" name="WantNewsletter" checked="checked">
-										Please add me to the newsletter
+										Please add me to the newsletter (optional)
 									</label>
 								</div>
 							</div>
@@ -784,7 +784,7 @@
 									<label for="is_18">
 										<input type="checkbox" value="true" id="is_18" name="IsCorrectAge">
 										I certify that I will be at least 18 years old when the convention starts
-										<span class="required">*</span>
+										
 									</label>
 								</div>
 							</div>
@@ -793,7 +793,7 @@
 									<label for="accepted_terms_and_conditions">
 										<input type="checkbox" value="true" id="accepted_terms_and_conditions" name="AcceptedTermsAndConditions">
 										I accept the <a href="/About/Policies" target="Policies">Terms and Conditions</a>
-										<span class="required">*</span>
+										
 									</label>
 								</div>
 							</div>
@@ -802,7 +802,7 @@
 									<label class="control-label" for="accepted_refund_terms">
 										<input type="checkbox" value="true" id="accepted_refund_terms" name="AcceptedCancellationRules">
 										I accept the <a href="javascript:void(0);" id="viewAcceptedCancellationRules">Refund and Cancellation terms</a>
-										<span class="required">*</span>
+										
 									</label>
 								</div>
 							</div>
@@ -833,15 +833,15 @@
 				</div>
 				<div class="sidebar-container">
 					<div class="cost-container panel panel-info">
-						<div class="panel-heading"><h3 class="panel-title">Price list</h3></div>
+						<div class="panel-heading toggle-cost-container"><h3 class="panel-title">Price list</h3><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
 						<div class="panel-body">
 							<span class="price-item">+ <span class="item-name">Early Arrival</span><span class="item-cost">1000 SEK</span></span>
 							<span class="price-item">+ <span class="item-name">Main Days</span><span class="item-cost">2000 SEK</span></span>
 							<span class="price-item">+ <span class="item-name">Late Departure</span><span class="item-cost">1000 SEK</span></span>
 							<span class="price-item">+ <span class="item-name">Something</span><span class="item-cost">1000 SEK</span></span>
 						</div>
-						<div class="panel-footer">
-							<span>SUM</span><span class="total-price">5000 SEK</span>
+						<div class="panel-footer toggle-cost-container clearfix">
+							<button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button><span class="sum-label">SUM</span><span class="total-price">5000 SEK</span>
 						</div>
 					</div>
 				</div>
