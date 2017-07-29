@@ -47,6 +47,12 @@ $(document).ready(function() {
 			if($('#navbar').is(".in")) {
 				$('.navbar-toggle').click();
 			}
+		}       
+		
+		if(!$(event.target).closest('.cost-container').length) {
+			if($('.cost-container:not(.closed)') && document.querySelector(".wrapped")) {
+				$(".cost-container").addClass("closed");
+			}
 		}        
 	});
 	
