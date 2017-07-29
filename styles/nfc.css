@@ -22,10 +22,18 @@
 	width: 7em !important;
 }
 
+.collapse.navbar-collapse.in .mobile-label {
+	display: inline-block;
+}
+
+.collapse.navbar-collapse .mobile-label {
+	display: none;
+}
+
 body {
     padding-top: 50px;
     position: relative !important;
-    padding-bottom: 7.75em;
+    padding-bottom: 3.5em;
 	min-height: 100vh;
 }
 
@@ -145,7 +153,6 @@ a.btn {
 	top: 70px;
 }
 
-
 .affix {
     position: fixed !important;
 }
@@ -177,6 +184,10 @@ a.btn {
 #regform_wrap.wrapped .form {
 	float: none;
 	width: 100%;
+}
+
+#regform_wrap.wrapped {
+	padding-bottom: 1.75em;
 }
 
 #regform_wrap::after { 

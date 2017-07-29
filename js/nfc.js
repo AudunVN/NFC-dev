@@ -18,6 +18,17 @@ function modalClickHandler(clickEvent, clickedObject) {
 	});
 }
 
+function resizeHandler() {
+	$(".cost-container").css("width", $(".sidebar-container").width()+"px");
+	if ($("#regform_wrap").width() < 600) {
+		$("#regform_wrap").addClass("wrapped");
+		$("#regform_wrap .cost-container").addClass("closed");
+	} else {
+		$("#regform_wrap").removeClass("wrapped");
+		$("#regform_wrap .cost-container").removeClass("closed");
+	}
+}
+
 $(document).ready(function() {
 	$('#txtModal').modal('hide');
 	$('.toggleModal').click(function(ev){modalClickHandler(ev, this);});
@@ -57,28 +68,18 @@ $(document).ready(function() {
 		});
 	});
 	
-	if ($("#regform_wrap").width() < 600) {
-		$("#regform_wrap").addClass("wrapped");
-		$("#regform_wrap .cost-container").addClass("closed");
-	} else {
-		$("#regform_wrap").removeClass("wrapped");
-		$("#regform_wrap .cost-container").removeClass("closed");
-	}
-	
-	$(".cost-container").css("width", $(".sidebar-container").width()+"px");
 	$(".cost-container").affix({offset: {top: $("#regform_wrap .form").position().top-$(".navbar").height(), bottom: $(document).outerHeight()-($("#regform_wrap").position().top+$("#regform_wrap").outerHeight())}});
+	
+	resizeHandler();
+	
+	setTimeout(resizeHandler, 150);
 });
 
 $(window).resize(function() {
 	clearTimeout(window.resizedFinished);
 	window.resizedFinished = setTimeout(function(){
-		$(".cost-container").css("width", $(".sidebar-container").width()+"px");
-		if ($("#regform_wrap").width() < 600) {
-			$("#regform_wrap").addClass("wrapped");
-			$("#regform_wrap .cost-container").addClass("closed");
-		} else {
-			$("#regform_wrap").removeClass("wrapped");
-			$("#regform_wrap .cost-container").removeClass("closed");
-		}
+		resizeHandler();
+		/* run again after document reflow */
+		setTimeout(resizeHandler, 150);
 	}, 250);
 });
