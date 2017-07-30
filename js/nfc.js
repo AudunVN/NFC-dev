@@ -49,11 +49,11 @@ $(document).ready(function() {
 			}
 		}       
 		
-		/*if(!$(event.target).closest('.cost-container').length) {
+		if(!$(event.target).closest('.cost-container').length) {
 			if($('.cost-container:not(.closed)') && document.querySelector(".wrapped")) {
 				$(".cost-container").addClass("closed");
 			}
-		}*/
+		}
 	});
 	
 	$(".requires-fursuiter").hide();
