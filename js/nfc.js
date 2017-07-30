@@ -61,6 +61,7 @@ $(document).ready(function() {
 			timer: false,
 			shuffle: true,
 			cover: true,
+			valign: "top",
 			transition: ["fade", "fade2"],
 			transitionDuration: 2e3,
 			slides: [
