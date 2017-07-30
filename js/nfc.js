@@ -56,6 +56,16 @@ $(document).ready(function() {
 		}*/
 	});
 	
+	$(".requires-fursuiter").hide();
+	
+	$('#fursuiter').on('change', function() {
+		if (this.value) {
+			$(".requires-fursuiter").show();
+		} else {
+			$(".requires-fursuiter").hide();
+		}
+	});
+	
 	$(function() {
 		$('body').vegas({
 			timer: false,

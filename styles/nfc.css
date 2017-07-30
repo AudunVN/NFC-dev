@@ -157,7 +157,9 @@ a.btn {
 }
 
 /* regform css */
-
+.section-header:first-child h3 {
+	margin-top: 0;
+}
 .form-group .btn-group {
 	display: inline-block;
     width: 100%;
