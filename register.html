@@ -174,7 +174,7 @@
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="dob">Date of birth </label>
-								<input class="form-control" type="text" placeholder="yyyy-mm-dd" id="dob" name="Dob">
+								<input class="form-control" type="date" placeholder="yyyy-mm-dd" id="dob" name="Dob">
 							</div>
 							<div class="form-group">
 								<label class="control-label">Gender</label>
@@ -475,34 +475,9 @@
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">Main Section</h3>
+							<h3 class="panel-title">About You</h3>
 						</div>
 						<div class="panel-body">
-							<div class="section-header">
-								<h3>Pet Or Service Animal</h3>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="bring_a_pet">
-										<input type="checkbox" value="true" id="bring_a_pet" name="BringAPet">
-										I want to bring my pet dog or service animal to the convention (registration staff will contact you after you have signed up)
-									</label>
-								</div>
-							</div>
-							<div class="section-header">
-								<h3>Fursuit?</h3>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="fursuiter">
-										<input type="checkbox" value="true" id="fursuiter" name="PlanToFursuit">
-										I'm a fursuiter and plan to bring one/more fursuit(s) and want a free fursuit badge
-									</label>
-								</div>
-							</div>
-							<div class="section-header">
-								<h3>Additional Information</h3>
-							</div>
 							<div class="form-group">
 								<div class="checkbox">
 									<label for="first_furry_convention">
@@ -524,6 +499,14 @@
 									<label for="volunteer">
 										<input type="checkbox" value="true" id="volunteer" name="WantsToVolunteer">
 										I want to volunteer at the convention
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label for="fursuiter">
+										<input type="checkbox" value="true" id="fursuiter" name="PlanToFursuit">
+										I'm a fursuiter and plan to bring one/more fursuit(s) and want a free fursuit badge
 									</label>
 								</div>
 							</div>
@@ -610,59 +593,16 @@
 									</label>
 								</div>
 							</div>
-							<div class="section-header">
-								<h3>Dealers' Den</h3>
-							</div>
-							<div id="DealersDenContainer">
-								<div class="form-group">
-									<div class="checkbox">
-										<label for="possible_dealer">
-											<input type="checkbox" value="true" id="possible_dealer" name="WantsToSellAtTheConvention">
-											I would like a Dealers' Den spot
-										</label>
-									</div>
-									<div class="help-block">
-										Read more about selling in the Dealers' Den <a href="/Program/DealersDen" target="dealersden">here</a>. Number of spots left can be seen under <a href="">availability</a>.
-									</div>
-								</div>
-							</div>
-							<p id="DealersDenContainerNotAvailable">You can not reserve a spot in the Dealers' Den with a single day ticket.</p>
-							<div class="section-header">
-								<h3>Attending &amp; Accomodation</h3>
-							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Accommodation and Events</h3>
+						</div>
+						<div class="panel-body">
 							<div class="form-group">
 								<label class="control-label" for="attending_type">Attending Type </label>
 								<select class="form-control" id="attending_type" name="AttendingTypeId"></select>
-								<div class="sponsor bonus-options" style="display:none;">
-									<legend>Sponsor exclusive options</legend>
-									<p class="help-block">As a sponsor, you get one free t-shirt and can buy a ticket to the ice cream buffet:</p>
-									<div class="form-group">
-										<label class="control-label sponsor_tshirt_size" for="sponsor_tshirt_size">T-shirt size</label>
-										<select class="form-control" id="sponsor_tshirt_size" name="TshirtProductIdSponsor"></select>
-										<i class="icon-help-circled sponsor_tshirt_size"></i>
-									</div>
-									<div class="form-group">
-										<input class="form-control" type="checkbox" id="sponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSponsor">
-										<label class="control-label sponsor_ice_cream_buffet" for="sponsor_ice_cream_buffet">
-
-										</label>
-										<i class="icon-help-circled sponsor_ice_cream_buffet"></i>
-										<div class="help-block">More information about the Ice Cream buffet can be found <a href="/Reg/Prices" target="Prices">here</a>.</div>
-									</div>
-								</div>
-								<div class="superSponsor bonus-options" style="display:none;">
-									<legend>Super-Sponsor exclusive options</legend>
-									<p class="help-block">As a Super-Sponsor, you are granted <strong>FREE</strong> access to the following options:</p>
-									<div class="form-group">
-										<label class="inline superSponsor_tshirt_size" for="superSponsor_tshirt_size">T-shirt size</label>
-										<select class="form-control" id="superSponsor_tshirt_size" name="TshirtProductIdSuperSponsor"></select>
-										<i class="icon-help-circled superSponsor_tshirt_size"></i>
-									</div>
-									<div class="form-group">
-										<span id="superSponsor_ice_cream_buffet_label"></span>
-										<input class="form-control" type="hidden" id="superSponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSuperSponsor">
-									</div>
-								</div>
 							</div>
 							<div class="form-group" id="accommodationMainDays">
 								<label class="control-label" for="accomodation_type">Accommodation </label>
@@ -688,7 +628,54 @@
 								</div>
 							</div>
 							<div class="section-header">
-								<h3>Extras</h3>
+								<h3>Dealers' Den</h3>
+							</div>
+							<div id="DealersDenContainer">
+								<div class="form-group">
+									<div class="checkbox">
+										<label for="possible_dealer">
+											<input type="checkbox" value="true" id="possible_dealer" name="WantsToSellAtTheConvention">
+											I would like a Dealers' Den spot
+										</label>
+									</div>
+									<div class="help-block">
+										Read more about selling in the Dealers' Den <a href="/Program/DealersDen" target="dealersden">here</a>. Number of spots left can be seen under <a href="">availability</a>.
+									</div>
+								</div>
+							</div>
+							<p id="DealersDenContainerNotAvailable">You can not reserve a spot in the Dealers' Den with a single day ticket.</p>
+							<div class="sponsor bonus-options" style="display:none;">
+								<legend>Sponsor exclusive options</legend>
+								<p class="help-block">As a sponsor, you get one free t-shirt and can buy a ticket to the ice cream buffet:</p>
+								<div class="form-group">
+									<label class="control-label sponsor_tshirt_size" for="sponsor_tshirt_size">T-shirt size</label>
+									<select class="form-control" id="sponsor_tshirt_size" name="TshirtProductIdSponsor"></select>
+									<i class="icon-help-circled sponsor_tshirt_size"></i>
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="checkbox" id="sponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSponsor">
+									<label class="control-label sponsor_ice_cream_buffet" for="sponsor_ice_cream_buffet">
+
+									</label>
+									<i class="icon-help-circled sponsor_ice_cream_buffet"></i>
+									<div class="help-block">More information about the Ice Cream buffet can be found <a href="/Reg/Prices" target="Prices">here</a>.</div>
+								</div>
+							</div>
+							<div class="superSponsor bonus-options" style="display:none;">
+								<legend>Super-Sponsor exclusive options</legend>
+								<p class="help-block">As a Super-Sponsor, you are granted <strong>FREE</strong> access to the following options:</p>
+								<div class="form-group">
+									<label class="inline superSponsor_tshirt_size" for="superSponsor_tshirt_size">T-shirt size</label>
+									<select class="form-control" id="superSponsor_tshirt_size" name="TshirtProductIdSuperSponsor"></select>
+									<i class="icon-help-circled superSponsor_tshirt_size"></i>
+								</div>
+								<div class="form-group">
+									<span id="superSponsor_ice_cream_buffet_label"></span>
+									<input class="form-control" type="hidden" id="superSponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSuperSponsor">
+								</div>
+							</div>
+							<div class="section-header">
+								<h3>Meals</h3>
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="buffet_tickets">Buffet tickets</label>
@@ -739,6 +726,9 @@
 									More information about the trip to Skansen can be found <a href="/Program/Skansen" target="Skansen">here</a>.
 								</div>
 							</div>
+							<div class="section-heading">
+								<h3>FuzzBus</h3>
+							</div>
 							<div class="form-group">
 								<label class="control-label" for="furry_bus_arrival">FuzzBus arrival</label>
 								<select class="form-control" id="furry_bus_arrival" name="FurryBusArrivalId"></select>
@@ -748,6 +738,13 @@
 								<select class="form-control" id="furry_bus_departure" name="FurryBusDepartureId"></select>
 								<div class="help-block">More information about the FuzzBus can be found <a href="/Venue/FuzzBus" target="FuzzBus">here</a>.</div>
 							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Extra Information</h3>
+						</div>
+						<div class="panel-body">
 							<div class="section-header">
 								<h3>T-shirts &amp; Extra Badges</h3>
 							</div>
@@ -763,14 +760,21 @@
 							<div class="form-group">
 								<label class="control-label" for="buy_more_fursuit_badges">Extra Fursuit Badges</label>
 								<select class="form-control" id="buy_more_fursuit_badges" name="BuyExtraFursuitBadgeProductId"></select>
-								<span class="help-block">Unavailable until you tick the checkbox 'I am a fursuiter' in the previous tab. The first fursuit badge is free.</span>
+								<span class="help-block">Unavailable until you tick the checkbox 'I am a fursuiter' above. The first fursuit badge is free.</span>
 							</div>
 							<div class="section-header">
-								<h3>Comments or Additional Information</h3>
+								<h3>Pet Or Service Animal</h3>
 							</div>
 							<div class="form-group">
-								<label class="control-label" for="comments">Comments</label>
-								<textarea class="form-control" rows="5" cols="30" id="comments" name="Comments"></textarea>
+								<div class="checkbox">
+									<label for="bring_a_pet">
+										<input type="checkbox" value="true" id="bring_a_pet" name="BringAPet">
+										I want to bring my pet dog or service animal to the convention (registration staff will contact you after you have signed up)
+									</label>
+								</div>
+							</div>
+							<div class="section-header">
+								<h3>Terms And Conditions</h3>
 							</div>
 							<div class="form-group">
 								<div class="checkbox">
@@ -807,6 +811,13 @@
 									</label>
 								</div>
 							</div>
+							<div class="section-header">
+								<h3>Comments or Additional Information</h3>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="comments">Comments</label>
+								<textarea class="form-control" rows="5" cols="30" id="comments" name="Comments"></textarea>
+							</div>
 						</div>
 					</div>
                     
@@ -834,7 +845,7 @@
 				</div>
 				<div class="sidebar-container">
 					<div class="cost-container panel panel-info">
-						<div class="panel-heading toggle-cost-container"><h3 class="panel-title">Price list</h3><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+						<div class="panel-heading toggle-cost-container"><h3 class="panel-title">Registration Summary</h3><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
 						<div class="panel-body">
 							<span class="price-item">+ <span class="item-name">Early Arrival</span><span class="item-cost">1000 SEK</span></span>
 							<span class="price-item">+ <span class="item-name">Main Days</span><span class="item-cost">2000 SEK</span></span>
