@@ -178,16 +178,12 @@
 							</div>
 							<div class="form-group">
 								<label class="control-label">Gender</label>
-								<div class="radio">
-									<label class="inline radio checked" for="male">
-										<input name="Gender" id="male" value="true" type="radio" checked="checked">
-										Male
+								<div class="btn-group" data-toggle="buttons">
+									<label class="btn btn-info active">
+										<input type="radio" name="Gender" id="male" value="true"  checked> Male
 									</label>
-								</div>
-								<div class="radio">
-									<label class="inline radio" for="female">
-										<input name="Gender" id="female" value="false" type="radio">
-										Female
+									<label class="btn btn-info">
+										<input type="radio" name="Gender" id="female" value="false"> Female
 									</label>
 								</div>
 							</div>
@@ -643,7 +639,7 @@
 									</div>
 								</div>
 							</div>
-							<p id="DealersDenContainerNotAvailable">You can not reserve a spot in the Dealers' Den with a single day ticket.</p>
+							<p class="help-block" id="DealersDenContainerNotAvailable">You can not reserve a spot in the Dealers' Den with a single day ticket.</p>
 							<div class="sponsor bonus-options" style="display:none;">
 								<legend>Sponsor exclusive options</legend>
 								<p class="help-block">As a sponsor, you get one free t-shirt and can buy a ticket to the ice cream buffet:</p>
@@ -677,7 +673,7 @@
 							<div class="section-header">
 								<h3>Meals</h3>
 							</div>
-							<div class="form-group">
+							<!--<div class="form-group">
 								<label class="control-label" for="buffet_tickets">Buffet tickets</label>
 								<select class="form-control" id="buffet_tickets" name="NumberOfBuffetTickets"></select>
 								<i class="icon-help-circled dinner"></i>
@@ -685,9 +681,28 @@
 									We are proud over our very popular dinner buffets. You can read more about them <a href="/Venue/Dinner" target="Dinner">here</a>.<br/>
 									<span class="help-block">The Dying Dog Dinner is not included in the All-days inclusive buffet.</span>
 								</div>
-							</div>
-							<div class="section-heading">
-								<h3>Events</h3>
+							</div>-->
+							<div class="form-group">
+								<label class="control-label">Buffet tickets</label>
+								<div class="btn-group" data-toggle="buttons">
+									<label class="btn btn-info active">
+										<input type="radio" name="NumberOfBuffetTickets" id="nobuffets" value="true"> 0
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="NumberOfBuffetTickets" id="onebuffet" value="false"> 1
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="NumberOfBuffetTickets" id="twobuffets" value="false" > 2
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="NumberOfBuffetTickets" id="threebuffets" value="false"> 3
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="NumberOfBuffetTickets" id="fourbuffets" value="false"> 4
+									</label>
+								</div>
+								<span class="help-block">We are proud over our very popular dinner buffets. You can read more about them <a href="/Venue/Dinner" target="Dinner">here</a>.</span>
+								<span class="help-block">The Dying Dog Dinner is not included in the all-days inclusive buffet; there's an option for that below.</span>
 							</div>
 							<div class="form-group">
 								<div class="checkbox">
@@ -701,6 +716,9 @@
 									More information about the Dying Dog Dinner event can be found <a href="/Program/DyingDogDinner" target="DyingDogDinner">here</a>.<br/>
 									<span class="help-block">The normal Dead Dog party is open to everyone.</span>
 								</div>
+							</div>
+							<div class="section-heading">
+								<h3>Events</h3>
 							</div>
 							<div class="form-group">
 								<div class="checkbox">
@@ -748,18 +766,80 @@
 							<div class="section-header">
 								<h3>T-shirts &amp; Extra Badges</h3>
 							</div>
-							<div class="form-group">
+							<!--<div class="form-group">
 								<label class="control-label" for="buy_more_tshirts_size">T-Shirt Size</label>
 								<select class="form-control" id="buy_more_tshirts_size" name="BuyTshirtProductId"></select>
-							</div>
+							</div>-->
 							<div class="form-group">
+								<label class="control-label">T-Shirt Size</label>
+								<div class="btn-group" data-toggle="buttons">
+									<label class="btn btn-info">
+										<input type="radio" name="TshirtSize" id="s" value="false"> S
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="TshirtSize" id="m" value="false"> M
+									</label>
+									<label class="btn btn-info active">
+										<input type="radio" name="TshirtSize" id="l" value="true"  checked> L
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="TshirtSize" id="xl" value="false"> XL
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="TshirtSize" id="xxl" value="false"> XXL
+									</label>
+								</div>
+							</div>
+							<!--<div class="form-group">
 								<label class="control-label" for="buy_more_tshirts">Number Of T-Shirts</label>
 								<select class="form-control" id="buy_more_tshirts" name="NumberOfTshirtsToBuy"></select>
 								<span class="help-block">You get one for free t-shirt if you are a Sponsor or a Super-Sponsor.</span>
-							</div>
+							</div>-->
 							<div class="form-group">
+								<label class="control-label">Number Of T-Shirts</label>
+								<div class="btn-group" data-toggle="buttons">
+									<label class="btn btn-info active">
+										<input type="radio" name="NumberOfTshirtsToBuy" id="notshirts" value="true"> 0
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="NumberOfTshirtsToBuy" id="onetshirt" value="false"> 1
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="NumberOfTshirtsToBuy" id="twotshirts" value="false" > 2
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="NumberOfTshirtsToBuy" id="threetshirts" value="false"> 3
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="NumberOfTshirtsToBuy" id="fourtshirts" value="false"> 4
+									</label>
+								</div>
+								<span class="help-block">You get one for free t-shirt if you are a Sponsor or a Super-Sponsor.</span>
+							</div>
+							<!--<div class="form-group">
 								<label class="control-label" for="buy_more_fursuit_badges">Extra Fursuit Badges</label>
 								<select class="form-control" id="buy_more_fursuit_badges" name="BuyExtraFursuitBadgeProductId"></select>
+								<span class="help-block">Unavailable until you tick the checkbox 'I am a fursuiter' above. The first fursuit badge is free.</span>
+							</div>-->
+							<div class="form-group">
+								<label class="control-label">Extra Fursuit Badges</label>
+								<div class="btn-group" data-toggle="buttons">
+									<label class="btn btn-info active">
+										<input type="radio" name="BuyExtraFursuitBadgeProductId" id="nobadge" value="true"> 0
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="BuyExtraFursuitBadgeProductId" id="onebadges" value="false"> 1
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="BuyExtraFursuitBadgeProductId" id="twobadges" value="false" > 2
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="BuyExtraFursuitBadgeProductId" id="threebadges" value="false"> 3
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="BuyExtraFursuitBadgeProductId" id="fourbadges" value="false"> 4
+									</label>
+								</div>
 								<span class="help-block">Unavailable until you tick the checkbox 'I am a fursuiter' above. The first fursuit badge is free.</span>
 							</div>
 							<div class="section-header">

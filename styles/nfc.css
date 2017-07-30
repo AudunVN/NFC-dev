@@ -157,6 +157,11 @@ a.btn {
 }
 
 /* regform css */
+
+.form-group .btn-group {
+	display: inline-block;
+    width: 100%;
+}
 .item-cost {
 	float: right;
 }
