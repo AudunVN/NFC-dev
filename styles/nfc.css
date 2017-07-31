@@ -111,7 +111,8 @@ textarea {
 
 .registration-badge {
 	display: inline-block;
-	min-width: 40em;
+	width: 40em;
+	max-width: 100%;
 }
 
 .registration-badge .row {
