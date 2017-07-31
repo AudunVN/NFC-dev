@@ -97,6 +97,35 @@ textarea {
 	color: #75C5F0;
 }
 
+.icon-link .fa-comments {
+	color: #FFF;
+}
+
+.icon-link .fa-image {
+	color: #FFF;
+}
+
+.badge-image {
+	max-height: 10em;
+}
+
+.registration-badge {
+	display: inline-block;
+	min-width: 40em;
+}
+
+.registration-badge .row {
+	padding-top: 1em;
+}
+
+.registration-badge .row:first-child {
+	padding-top: 0em;
+}
+
+.registration-badge .row .col-sm-4 {
+	text-align: center;
+}
+
 .icon-link.nfcweb .fa-paw {
     background-image: url("../img/NFCicon.png");
     background-repeat: no-repeat;
@@ -160,14 +189,15 @@ a.btn {
 .section-header:first-child h3 {
 	margin-top: 0;
 }
+
 .form-group .btn-group {
 	display: inline-block;
     width: 100%;
 }
+
 .item-cost {
 	float: right;
 }
-
 
 .total-price {
 	float: right;
