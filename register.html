@@ -182,10 +182,16 @@
 								<label class="control-label">Gender</label>
 								<div class="btn-group" data-toggle="buttons">
 									<label class="btn btn-info active">
-										<input type="radio" name="Gender" id="male" value="true"  checked> Male
+										<input type="radio" name="Gender" id="male" value="2"  checked> Male
 									</label>
 									<label class="btn btn-info">
-										<input type="radio" name="Gender" id="female" value="false"> Female
+										<input type="radio" name="Gender" id="female" value="3"> Female
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="Gender" id="other" value="4"> Other
+									</label>
+									<label class="btn btn-info">
+										<input type="radio" name="Gender" id="other" value="1"> Prefer not to say
 									</label>
 								</div>
 							</div>
@@ -471,112 +477,6 @@
 							</div>
 						</div>
 					</div>
-					<!--<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">About You</h3>
-						</div>
-						<div class="panel-body">
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="first_furry_convention">
-										<input type="checkbox" value="true" id="first_furry_convention" name="FirstFurryConvention">
-										This is my first furry convention
-									</label>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="volunteer">
-										<input type="checkbox" value="true" id="volunteer" name="WantsToVolunteer">
-										I want to volunteer at the convention
-									</label>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="vegetarian">
-										<input type="checkbox" value="true" id="vegetarian" name="IsVegetarian">
-										I'm a vegetarian
-									</label>
-								</div>
-							</div>
-							<!--@*<div class="form-group">
-								<label class="checkbox" for="interested_in_staying_in_the_party_wing">
-									<input type="checkbox" value="true" id="interested_in_staying_in_the_party_wing" name="InterestedInStayingInThePartyWing">
-									I wish to stay in the party wing (not a guarantee it will happen 2017)<br/>
-									<span style="font-style: italic;">Both you and your room share partner(s) must have selected this option.</span>
-								</label>
-							</div>*@
-							<div class="section-header">
-								<h3>Your Interests</h3>
-							</div>
-							<p class="help-block">Help us arrange more panels that appeal to you!</p>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="gaming_events">
-										<input type="checkbox" value="true" id="gaming_events" name="InterestedInGamingEvents">
-										I'm interested in video gaming events
-									</label>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="board_gaming_events">
-										<input type="checkbox" value="true" id="board_gaming_events" name="InterestedInBoardGamingEvents">
-										I'm interested in board gaming events
-									</label>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="food_events">
-										<input type="checkbox" value="true" id="food_events" name="InterestedInFoodEvents">
-										I'm interested in food related events
-									</label>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="goh_events">
-										<input type="checkbox" value="true" id="goh_events" name="InterestedInGohEvents">
-										I'm interested in Guest of Honour events
-									</label>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="music_events">
-										<input type="checkbox" value="true" id="music_events" name="InterestedInMusicEvents">
-										I'm interested in music events
-									</label>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="art_events">
-										<input type="checkbox" value="true" id="art_events" name="InterestedInArtEvents">
-										I'm interested in art events
-									</label>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="writing_events">
-										<input type="checkbox" value="true" id="writing_events" name="InterestedInWritingEvents">
-										I'm interested in writing events
-									</label>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="checkbox">
-									<label for="fursuiting_events">
-										<input type="checkbox" value="true" id="fursuiting_events" name="InterestedInFursuitingEvents">
-										I'm interested in fursuiting events
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>-->
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Accommodation and Events</h3>
@@ -622,64 +522,8 @@
 								<div class="help-block">More information about the FuzzBus can be found <a href="/Venue/FuzzBus" target="FuzzBus">here</a>.</div>
 							</div>
 							<div class="section-header">
-								<h3>Dealers' Den</h3>
-							</div>
-							<div id="DealersDenContainer">
-								<div class="form-group">
-									<div class="checkbox">
-										<label for="possible_dealer">
-											<input type="checkbox" value="true" id="possible_dealer" name="WantsToSellAtTheConvention">
-											I would like a Dealers' Den spot
-										</label>
-									</div>
-									<div class="help-block">
-										Read more about selling in the Dealers' Den <a href="/Program/DealersDen" target="dealersden">here</a>. Number of spots left can be seen under <a href="">availability</a>.
-									</div>
-								</div>
-							</div>
-							<p class="help-block" id="DealersDenContainerNotAvailable">You can not reserve a spot in the Dealers' Den with a single day ticket.</p>
-							<div class="sponsor bonus-options" style="display:none;">
-								<legend>Sponsor exclusive options</legend>
-								<p class="help-block">As a sponsor, you get one free t-shirt and can buy a ticket to the ice cream buffet:</p>
-								<div class="form-group">
-									<label class="control-label sponsor_tshirt_size" for="sponsor_tshirt_size">T-shirt size</label>
-									<select class="form-control" id="sponsor_tshirt_size" name="TshirtProductIdSponsor"></select>
-									<i class="icon-help-circled sponsor_tshirt_size"></i>
-								</div>
-								<div class="form-group">
-									<input class="form-control" type="checkbox" id="sponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSponsor">
-									<label class="control-label sponsor_ice_cream_buffet" for="sponsor_ice_cream_buffet">
-
-									</label>
-									<i class="icon-help-circled sponsor_ice_cream_buffet"></i>
-									<div class="help-block">More information about the Ice Cream buffet can be found <a href="/Reg/Prices" target="Prices">here</a>.</div>
-								</div>
-							</div>
-							<div class="superSponsor bonus-options" style="display:none;">
-								<legend>Super-Sponsor exclusive options</legend>
-								<p class="help-block">As a Super-Sponsor, you are granted <strong>FREE</strong> access to the following options:</p>
-								<div class="form-group">
-									<label class="inline superSponsor_tshirt_size" for="superSponsor_tshirt_size">T-shirt size</label>
-									<select class="form-control" id="superSponsor_tshirt_size" name="TshirtProductIdSuperSponsor"></select>
-									<i class="icon-help-circled superSponsor_tshirt_size"></i>
-								</div>
-								<div class="form-group">
-									<span id="superSponsor_ice_cream_buffet_label"></span>
-									<input class="form-control" type="hidden" id="superSponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSuperSponsor">
-								</div>
-							</div>
-							<div class="section-header">
 								<h3>Meals</h3>
 							</div>
-							<!--<div class="form-group">
-								<label class="control-label" for="buffet_tickets">Buffet tickets</label>
-								<select class="form-control" id="buffet_tickets" name="NumberOfBuffetTickets"></select>
-								<i class="icon-help-circled dinner"></i>
-								<div class="help-block">
-									We are proud over our very popular dinner buffets. You can read more about them <a href="/Venue/Dinner" target="Dinner">here</a>.<br/>
-									<span class="help-block">The Dying Dog Dinner is not included in the All-days inclusive buffet.</span>
-								</div>
-							</div>-->
 							<div class="form-group">
 								<label class="control-label">Buffet tickets</label>
 								<div class="btn-group" data-toggle="buttons">
@@ -755,6 +599,44 @@
 							</div>
 						</div>
 					</div>
+					<div class="panel panel-default sponsor-options">
+						<div class="panel-heading">
+							<h3 class="panel-title">Sponsor exclusive options</h3>
+						</div>
+						<div class="panel-body">
+							<p class="help-block">As a sponsor, you get one free t-shirt and can buy a ticket to the ice cream buffet:</p>
+							<div class="form-group">
+								<label class="control-label sponsor_tshirt_size" for="sponsor_tshirt_size">T-shirt size</label>
+								<select class="form-control" id="sponsor_tshirt_size" name="TshirtProductIdSponsor"></select>
+								<i class="icon-help-circled sponsor_tshirt_size"></i>
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="checkbox" id="sponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSponsor">
+								<label class="control-label sponsor_ice_cream_buffet" for="sponsor_ice_cream_buffet">
+
+								</label>
+								<i class="icon-help-circled sponsor_ice_cream_buffet"></i>
+								<div class="help-block">More information about the Ice Cream buffet can be found <a href="/Reg/Prices" target="Prices">here</a>.</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default super-sponsor-options">
+						<div class="panel-heading">
+							<h3 class="panel-title">Super-Sponsor exclusive options</h3>
+						</div>
+						<div class="panel-body">
+							<p class="help-block">As a Super-Sponsor, you are granted <strong>FREE</strong> access to the following options:</p>
+							<div class="form-group">
+								<label class="inline superSponsor_tshirt_size" for="superSponsor_tshirt_size">T-shirt size</label>
+								<select class="form-control" id="superSponsor_tshirt_size" name="TshirtProductIdSuperSponsor"></select>
+								<i class="icon-help-circled superSponsor_tshirt_size"></i>
+							</div>
+							<div class="form-group">
+								<span id="superSponsor_ice_cream_buffet_label"></span>
+								<input class="form-control" type="hidden" id="superSponsor_ice_cream_buffet" name="IcecreamBuffetProductIdSuperSponsor">
+							</div>
+						</div>
+					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Extra Information</h3>
@@ -779,10 +661,6 @@
 							<div class="section-header">
 								<h3>T-shirts &amp; Extra Badges</h3>
 							</div>
-							<!--<div class="form-group">
-								<label class="control-label" for="buy_more_tshirts_size">T-Shirt Size</label>
-								<select class="form-control" id="buy_more_tshirts_size" name="BuyTshirtProductId"></select>
-							</div>-->
 							<div class="form-group">
 								<label class="control-label">T-Shirt Size</label>
 								<div class="btn-group" data-toggle="buttons">
@@ -793,7 +671,7 @@
 										<input type="radio" name="TshirtSize" id="m" value="false"> M
 									</label>
 									<label class="btn btn-info active">
-										<input type="radio" name="TshirtSize" id="l" value="true"  checked> L
+										<input type="radio" name="TshirtSize" id="l" value="true" checked> L
 									</label>
 									<label class="btn btn-info">
 										<input type="radio" name="TshirtSize" id="xl" value="false"> XL
@@ -803,11 +681,6 @@
 									</label>
 								</div>
 							</div>
-							<!--<div class="form-group">
-								<label class="control-label" for="buy_more_tshirts">Number Of T-Shirts</label>
-								<select class="form-control" id="buy_more_tshirts" name="NumberOfTshirtsToBuy"></select>
-								<span class="help-block">You get one for free t-shirt if you are a Sponsor or a Super-Sponsor.</span>
-							</div>-->
 							<div class="form-group">
 								<label class="control-label">Number Of T-Shirts</label>
 								<div class="btn-group" data-toggle="buttons">
@@ -827,13 +700,8 @@
 										<input type="radio" name="NumberOfTshirtsToBuy" id="fourtshirts" value="false"> 4
 									</label>
 								</div>
-								<span class="help-block">You get one for free t-shirt if you are a Sponsor or a Super-Sponsor.</span>
+								<span class="help-block">You get a free t-shirt if you are a Sponsor or a Super-Sponsor.</span>
 							</div>
-							<!--<div class="form-group">
-								<label class="control-label" for="buy_more_fursuit_badges">Extra Fursuit Badges</label>
-								<select class="form-control" id="buy_more_fursuit_badges" name="BuyExtraFursuitBadgeProductId"></select>
-								<span class="help-block">Unavailable until you tick the checkbox 'I am a fursuiter' above. The first fursuit badge is free.</span>
-							</div>-->
 							<div class="form-group requires-fursuiter">
 								<label class="control-label">Extra Fursuit Badges</label>
 								<div class="btn-group" data-toggle="buttons">
