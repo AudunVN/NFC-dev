@@ -14,15 +14,15 @@ var modals = {
 	nope: "hah",
 }
 
-var errors = {}
+var Error = function Error(message, msg_input_obj) {
+	// message to put in error list and near input
+    this.message = message;
+	// for adding error classes to highlight input, and adding the error message
+    this.msg_input_obj = msg_input_obj;
+};
 
 /* error object demo */
-var error = {
-	// message to put in error list and near input
-	message = "Invalid accommodation",
-	// for adding error classes to highlight input
-	associated_input_selector = "#accommodation"
-}
+var test_error = new Error("Invalid accommodation", $("#accommodation"));
 
 /* to-do: check that there is server-side protection 
    against this as well, client-side form validation
@@ -52,9 +52,9 @@ $(document).ready(function () {
 
         switch (groupId) {
             case SPONSOR_ID:
-				$(form_wrapper_selector).addClass("sponsor-selected");
-				$(form_wrapper_selector).removeClass("super-sponsor-selected");
-				$(form_wrapper_selector).removeClass("day-ticket-selected");
+				form_wrapper.addClass("sponsor-selected");
+				form_wrapper.removeClass("super-sponsor-selected");
+				form_wrapper.removeClass("day-ticket-selected");
 				/* to-do
                 $('#accommodationMainDays').show();                
                 $('.sponsor.bonus-options').show();
@@ -148,8 +148,18 @@ $(document).ready(function () {
 	});
 	
     $('#regform').submit(function (e) {
-		/* to-do */
-        e.preventDefault();
+		e.preventDefault();
+		cleanForm();
+		errors = validateForm();
+		if (len(errors) == 0) {
+			/* to-do */
+			/* for each input */
+				/* switch case based on input type */
+					/* if input has model form field class */
+					/* set form_data["model form field name"] to value */
+			/* run custom handlers for remaining composite data types */
+			/* send AJAX POST request containing form_data to reg_data url */
+		}
 	});
 	
 	$("input").each(function(){
@@ -167,8 +177,23 @@ function updatePrice() {
 	});
 }
 
+function validateForm() {
+	/* returns list of Error objects */
+	var errors = [];
+	$("[required]").each(function(){
+		$(this).find("[data-price]:selected").data("price");
+	});
+	return errors;
+}
+
+function updatePrice() {
+	$(".affects-price").each(function(){
+		$(this).find("[data-price]:selected").data("price");
+	});
+}
+
 function cleanForm() {
-	/* uncheck attributes that require prior checkboxes and such */
+	/* uncheck attributes that require prior checkboxes */
 	if !formWrapper.hasClass("extra-days-selected") {
 		$('#accomodation_type_super_early_arrival').val('0');
 		$('#accomodation_type_early_arrival').val('0');
