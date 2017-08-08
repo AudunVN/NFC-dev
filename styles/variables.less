@@ -11,7 +11,7 @@
 @brand-info: rgb(37, 126, 185);
 @brand-warning: rgb(240, 173, 78);
 @brand-danger: rgb(217, 83, 79);
-@body-bg: #2b3e50;
+@body-bg: rgb(43, 62, 80);
 @text-color: @gray-lighter;
 @link-color: @brand-primary;
 @link-hover-color: @link-color;
@@ -117,8 +117,8 @@
 @dropdown-caret-color: rgb(0, 0, 0);
 @zindex-navbar: 1000;
 @zindex-dropdown: 1000;
-@zindex-popover: 1010;
-@zindex-tooltip: 1030;
+@zindex-popover: 1060;
+@zindex-tooltip: 1070;
 @zindex-navbar-fixed: 1030;
 @zindex-modal-background: 1040;
 @zindex-modal: 1050;
@@ -154,7 +154,7 @@
 @navbar-padding-vertical: ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height: 340px;
 @navbar-default-color: @text-color;
-@navbar-default-bg: rgba(78, 93, 108, 1);
+@navbar-default-bg: rgb(78, 93, 108);
 @navbar-default-border: transparent;
 @navbar-default-link-color: @text-color;
 @navbar-default-link-hover-color: @navbar-default-link-color;
@@ -220,7 +220,7 @@
 @pager-disabled-color: @pagination-disabled-color;
 @jumbotron-padding: 30px;
 @jumbotron-color: inherit;
-@jumbotron-bg: transparent;
+@jumbotron-bg: fade(@gray-light, 75%);
 @jumbotron-heading-color: inherit;
 @jumbotron-font-size: ceil((@font-size-base * 1.5));
 @jumbotron-heading-font-size: ceil((@font-size-base * 4.5));
@@ -296,8 +296,8 @@
 @progress-bar-warning-bg: @brand-warning;
 @progress-bar-danger-bg: @brand-danger;
 @progress-bar-info-bg: @brand-info;
-@list-group-bg: @well-bg;
-@list-group-border: transparent;
+@list-group-bg: darken(@well-bg, 8%);
+@list-group-border: @brand-info;
 @list-group-border-radius: @border-radius-base;
 @list-group-hover-bg: @table-bg-hover;
 @list-group-active-color: @component-active-color;

@@ -105,26 +105,67 @@ textarea {
 	color: #FFF;
 }
 
-.badge-image {
-	max-height: 10em;
+.badge-container {
+    position: relative;
+    padding: 1em;
+    display: inline-block;
+    width: 100%;
 }
 
-.registration-badge {
-	display: inline-block;
-	width: 40em;
-	max-width: 100%;
+.badge-container.fursuit-badge {
+	padding-left: 6em;
 }
 
-.registration-badge .row {
-	padding-top: 1em;
+.badge-container.account-header {
+	padding-left: 9em;
+	margin-bottom: 1em;
 }
 
-.registration-badge .row:first-child {
-	padding-top: 0em;
+.registration-summary .list-group {
+	margin-bottom: 0;
 }
 
-.registration-badge .row .col-sm-4 {
-	text-align: center;
+.badge-container.fursuit-badge .badge-image {
+	height: 5em;
+}
+
+.badge-container.account-header .badge-image {
+	height: 8em;
+}
+
+.badge-container .badge-image {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.badge-container h3 {
+	margin-top: 0;
+}
+
+.badge-container h3 .label {
+	
+}
+
+.badge-container.account-header h3 {
+	padding-bottom: 0.5em;
+}
+
+.badge-container.fursuit-badge:first-child {
+	margin-top: 0;
+}
+
+.badge-container.fursuit-badge {
+	margin-top: 1em;
+}
+
+.badge-container.fursuit-badge h3 {
+	padding-top: 0.2em;
+}
+
+.badge-container .info-container {
+	/*border-left: 0.1em solid black;*/
 }
 
 .icon-link.nfcweb .fa-paw {
