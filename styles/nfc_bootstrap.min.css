@@ -1419,7 +1419,7 @@ td.visible-print,th.visible-print{display:table-cell!important}
 .dropdown-header{font-size:13px}
 .list-group-item:first-child{margin-top:0}
 .list-group-item{margin-top:.5em}
-.table,table{font-size:12px}
+.table,table{font-size:14px}
 .table a,table a{color:#fff;text-decoration:underline}
 .table .text-muted,table .text-muted{color:#4e5d6c}
 input,textarea{color:#2b3e50}
