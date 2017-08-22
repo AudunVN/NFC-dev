@@ -138,7 +138,6 @@ $(document).ready(function () {
 	});
 	
 	/* on-select modal renderer */
-	
 	$("[data-on-select-modal]").each(function(){
 		$(this).on("change", function() {
 			if ($(this).is(':checked')) {
